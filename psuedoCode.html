@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- interactive map will be displayed here  -->
+
+
+        <!-- divs of all the great houses that will be clickable and trigger an event listener to append the house ID from the API -->
+        <div class="stark"></div>
+        <div class="targaryan"></div>
+        <div class="lannisters"></div>
+        <div class="greyjoy"></div>
+        <div class="tully"></div>
+        <div class="baratheon"></div>
+        <div class="martell"></div>
+        <div class="arryn"></div>
+        <div class="tyrell"></div>
+
+
+    </header>
+
+    <main>
+        <!-- house information will be shown and appended here  -->
+        <div class="housename"></div>
+        <div class="familymotto"></div>
+        <div class="emblem">
+            <img src="" alt="image of house emblem">
+        </div>
+        <div class="region"></div>
+        <div class="founder"></div>
+        <div class="founded"></div>
+        <div class="history"></div>
+        <div class="currentLord">
+            <img src="" alt="image of current lord">
+        </div>
+        <div class="lordTitles"></div>
+    
+    </main>
+
+
+    <script>
+        // Create app namespace to hold all methods
+        const app = {};
+        app.URL = 'https://www.anapioficeandfire.com/api/houses/';
+
+
+
+        // Collect user input
+        app.collectInfo = function () {
+
+        }
+
+        // Make AJAX request with user inputted data
+        //houseID is a parameter that will change based on the div clicked on the interactive map. The div will trigger the ID of the house found in the API. 
+        //Once triggered, and will get us the information we want to append to our website. 
+
+        app.getInfo = function (houseID) {
+            $.ajax({
+                url: `${app.URL}houseID`,
+                method: 'GET',
+                dataType: 'json'
+            }).then(function(result){
+                app.displayInfo(result)
+                console.log(result)
+        })
+        }
+
+        // Display data on the page
+        //we will be displaying information gathered from the API data, we will also be appending them to the page
+        app.displayInfo = function () {
+        }
+
+        // Start app
+        //put all the functions we need in here
+        app.init = function () {
+            app.getInfo();
+        }
+
+        $(function () {
+            app.init();
+        });
+
+    </script>
+</body>
+
+</html>
