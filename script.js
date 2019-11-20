@@ -1,6 +1,7 @@
 // Create app namespace to hold all methods
 const app = {};
 app.URL = 'https://www.anapioficeandfire.com/api/houses/378';
+app.Lord = 'https://www.anapioficeandfire.com/api/characters/1303'
 
 
 
@@ -14,24 +15,38 @@ app.collectInfo = function () {
 //Once triggered, and will get us the information we want to append to our website. 
 
 app.getInfo = function () {
-    return $.ajax({
+    $.ajax({
         url: `${app.URL}`,
         method: 'GET',
         dataType: 'json',
-    }).then(function (result) {
+    }).then(function () {
         // app.displayInfo(result)
-        console.log(result)
+        $.ajax({
+            url: `${app.URL}`,
+            method: 'GET',
+            dataType: 'json',
+        }).then(function (resultOne, resultTwo) {
+            app.displayInfo(resultOne, resultTwo);
+            // console.log(result)
+        });
     })
 }
-
 // Display data on the page
 //we will be displaying information gathered from the API data, we will also be appending them to the page
-app.displayInfo =  (houseInfo) => {
-    houseInfo.forEach((houseObject) => {
-        // $('.houseShit')
-            // .append(`<h2>${houseObject.name}</h2>`);
-        console.log(houseObject.name);
-    })
+app.displayInfo = (houseInfo, lordInfo) => {
+
+    $('.houseShit').append(`<h3>${houseInfo.name}</h3>`)
+    $('.houseShit').append(`<h3>${houseInfo.region}</h3>`)
+    $('.houseShit').append(`<h3>${houseInfo.coatOfArms}</h3>`)
+    $('.houseShit').append(`<h3>${houseInfo.words}</h3>`)
+    $('.houseShit').append(`<h3>${houseInfo.titles}</h3>`)
+    $('.houseShit').append(`<h3>${houseInfo.founder}</h3>`)
+    $('.houseShit').append(`<h3>${lordInfo.name}</h3>`)
+    $('.houseShit').append(`<h3>${houseInfo.name}</h3>`)
+
+    console.log(houseInfo.name);
+    console.log()
+
 }
 
 // Start app
