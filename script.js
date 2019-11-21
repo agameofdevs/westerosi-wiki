@@ -2,6 +2,7 @@
 const app = {};
 app.URL = 'https://www.anapioficeandfire.com/api/houses/378';
 app.Lord = 'https://www.anapioficeandfire.com/api/characters/1303'
+app.founder = 'https://www.anapioficeandfire.com/api/characters/209'
 
 
 
@@ -15,38 +16,47 @@ app.collectInfo = function () {
 //Once triggered, and will get us the information we want to append to our website. 
 
 app.getInfo = function () {
-    $.ajax({
-        url: `${app.URL}`,
-        method: 'GET',
-        dataType: 'json',
-    }).then(function () {
-        // app.displayInfo(result)
-        $.ajax({
-            url: `${app.URL}`,
-            method: 'GET',
-            dataType: 'json',
-        }).then(function (resultOne, resultTwo) {
-            app.displayInfo(resultOne, resultTwo);
-            // console.log(result)
-        });
-    })
+    $.when($.ajax({
+                url: `${app.URL}`,
+                method: 'GET',
+                dataType: 'json',
+            }),
+            $.ajax({
+                url: `${app.Lord}`,
+                method: 'GET',
+                dataType: 'json',
+            }),
+            $.ajax({
+                url: `${app.founder}`,
+                method: 'GET',
+                dataType: 'json',
+            })
+        )
+        .then(function (resultOne, resultTwo, resultThree) {
+            app.displayInfo(resultOne, resultTwo, resultThree);
+        }).fail((er1, er2, er3) => {
+            // console.log(er1,er2,er3);
+        })
 }
 // Display data on the page
 //we will be displaying information gathered from the API data, we will also be appending them to the page
-app.displayInfo = (houseInfo, lordInfo) => {
+app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
+    console.log(houseInfo, lordInfo, founderInfo)
 
-    $('.houseShit').append(`<h3>${houseInfo.name}</h3>`)
-    $('.houseShit').append(`<h3>${houseInfo.region}</h3>`)
-    $('.houseShit').append(`<h3>${houseInfo.coatOfArms}</h3>`)
-    $('.houseShit').append(`<h3>${houseInfo.words}</h3>`)
-    $('.houseShit').append(`<h3>${houseInfo.titles}</h3>`)
-    $('.houseShit').append(`<h3>${houseInfo.founder}</h3>`)
-    $('.houseShit').append(`<h3>${lordInfo.name}</h3>`)
-    $('.houseShit').append(`<h3>${houseInfo.name}</h3>`)
-
-    console.log(houseInfo.name);
-    console.log()
-
+    $('.houseName').append(`<h3>${houseInfo[0].name}</h3>`);
+    $('.region').append(`<h3>${houseInfo[0].region}</h3>`);
+    $('.emblem').append(`<h3>${houseInfo[0].coatOfArms}</h3>`);
+    $('.houseMotto').append(`<h3>${houseInfo[0].words}</h3>`);
+    $('.lordTitles').append(`<h3>${houseInfo[0].titles}</h3>`);
+    $('.founder').append(`<h3>${founderInfo[0].name}</h3>`);
+    $('.currentLord').append(`<h3>${lordInfo[0].name}</h3>`);
+    $('.founded').append(`<h3>${houseInfo[0].founded}</h3>`);
+    
+    console.log('house info', houseInfo);
+    console.log('lord info', lordInfo)
+    if (lordInfo.name === "") {
+        $('.houseShitLordShit').append(`<h3>unknown</h3>`);
+    }
 }
 
 // Start app
