@@ -32,7 +32,10 @@
 }
 
 .firstColumn {
-    // width:
+    // justify-content: space-evenly;
+    .history{
+        margin-bottom: 60%;
+    }
 }
 
 .secondColumn {
@@ -42,7 +45,7 @@
 
     .emblem {
         height:300px;
-        width:350px;
+        width:100%;
         margin:0 auto;
         background-color: beige;
     }
@@ -52,7 +55,7 @@
     margin-right: 0;
     .currentLordPic {
         height:300px;
-        width:350px;
+        width:100%;
         margin:0 auto;
     }
     .lordTitles {
