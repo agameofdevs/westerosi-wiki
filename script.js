@@ -6,68 +6,82 @@ app.founder = 'https://www.anapioficeandfire.com/api/characters/'
 
 
 
+let houseID;
+let lordID;
+let founderID;
 // Collect user input
+
+
 app.collectInfo = function () {
 
-    let houseID;
-    let lordID;
-    let founderID;
 
-    ('.targaryan').on('click', function () {
+    $('.targaryan').on('click', function () {
         houseID = 378;
         lordID = 1303;
         founderID = "";
-
+        app.getInfo();
     });
 
-    ('.stark').on('click', function () {
+    $('.stark').on('click', function () {
         houseID = 362;
         lordID = "";
         founderID = 209;
 
+        console.log('click')
+        app.getInfo();
+
     });
 
-    ('.lannister').on('click', function () {
+    $('.lannister').on('click', function () {
         houseID = 229;
         lordID = 238;
         founderID = 615;
+        app.getInfo();
     });
 
-    ('.arryn').on('click', function () {
+    $('.arryn').on('click', function () {
         houseID = 7;
         lordID = 894;
         founderID = 144;
+        app.getInfo();
     });
 
-    ('.tully').on('click', function () {
+    $('.tully').on('click', function () {
         houseID = 395;
         lordID = "";
         founderID = "";
+        app.getInfo();
     });
 
-    ('.greyjoy').on('click', function () {
+    $('.greyjoy').on('click', function () {
         houseID = 169;
         lordID = 385;
         founderID = "";
+        app.getInfo();
     });
 
-    ('.baratheon').on('click', function () {
+    $('.baratheon').on('click', function () {
         houseID = 17;
         lordID = 1029;
         founderID = 797;
+        app.getInfo();
     });
 
-    ('.tyrell').on('click', function () {
+    $('.tyrell').on('click', function () {
         houseID = 398;
         lordID = 691;
         founderID = 75;
+        app.getInfo();
     });
 
-    ('.martell').on('click', function () {
+    $('.martell').on('click', function () {
         houseID = 285;
         lordID = 326;
         founderID = 1718;
+        app.getInfo();
     });
+
+
 
 
 }
@@ -78,21 +92,21 @@ app.collectInfo = function () {
 
 app.getInfo = function () {
     $.when($.ajax({
-        url: `${app.URL}${houseID}`,
-        method: 'GET',
-        dataType: 'json',
-    }),
-        $.ajax({
-            url: `${app.Lord}${lordID}`,
-            method: 'GET',
-            dataType: 'json',
-        }),
-        $.ajax({
-            url: `${app.founder}${founderID}`,
-            method: 'GET',
-            dataType: 'json',
-        })
-    )
+                url: `${app.URL}${houseID}`,
+                method: 'GET',
+                dataType: 'json',
+            }),
+            $.ajax({
+                url: `${app.Lord}${lordID}`,
+                method: 'GET',
+                dataType: 'json',
+            }),
+            $.ajax({
+                url: `${app.founder}${founderID}`,
+                method: 'GET',
+                dataType: 'json',
+            })
+        )
         .then(function (resultOne, resultTwo, resultThree) {
             app.displayInfo(resultOne, resultTwo, resultThree);
         }).fail((er1, er2, er3) => {
@@ -123,8 +137,8 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
 // Start app
 //put all the functions we need in here
 app.init = function () {
+    app.collectInfo();
     app.getInfo();
-    app.collectInfo;
     app.displayInfo;
 }
 
