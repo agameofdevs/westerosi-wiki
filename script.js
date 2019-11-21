@@ -11,6 +11,17 @@ let lordID;
 let founderID;
 // Collect user input
 
+app.checkForEmptyValues = () => {
+    if (houseID == '') {
+        houseID = 'Unknown';
+    } else (lordID == '') {
+        lordID = 'Unknown';
+    } else (founderID == '') {
+        founderID ='Unknown';
+    }
+}
+
+app.checkForEmptyValues();
 
 app.collectInfo = function () {
 
