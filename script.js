@@ -11,17 +11,21 @@ let lordID;
 let founderID;
 // Collect user input
 
+
+
 app.checkForEmptyValues = () => {
-    if (houseID == '') {
-        houseID = 'Unknown';
-    } else if(lordID == '') {
-        lordID = 'Unknown';
-    } else if(founderID == '') {
-        founderID ='Unknown';
+    if (lordID == "") {
+
+        $('.currentLord').html(`<h3>Unknown</h3>`);
+
+    } else if (founderID == "") {
+
+        $('.founder').html(`<h3>Unknown</h3>`);
     }
 }
 
-app.checkForEmptyValues();
+
+
 
 app.collectInfo = function () {
 
@@ -37,7 +41,7 @@ app.collectInfo = function () {
         houseID = 362;
         lordID = "";
         founderID = 209;
-
+        // app.checkForEmptyValues();
         console.log('click')
         app.getInfo();
 
@@ -103,21 +107,21 @@ app.collectInfo = function () {
 
 app.getInfo = function () {
     $.when($.ajax({
-                url: `${app.URL}${houseID}`,
-                method: 'GET',
-                dataType: 'json',
-            }),
-            $.ajax({
-                url: `${app.Lord}${lordID}`,
-                method: 'GET',
-                dataType: 'json',
-            }),
-            $.ajax({
-                url: `${app.founder}${founderID}`,
-                method: 'GET',
-                dataType: 'json',
-            })
-        )
+        url: `${app.URL}${houseID}`,
+        method: 'GET',
+        dataType: 'json',
+    }),
+        $.ajax({
+            url: `${app.Lord}${lordID}`,
+            method: 'GET',
+            dataType: 'json',
+        }),
+        $.ajax({
+            url: `${app.founder}${founderID}`,
+            method: 'GET',
+            dataType: 'json',
+        })
+    )
         .then(function (resultOne, resultTwo, resultThree) {
             app.displayInfo(resultOne, resultTwo, resultThree);
         }).fail((er1, er2, er3) => {
@@ -138,11 +142,11 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.currentLord').html(`<h3>${lordInfo[0].name}</h3>`);
     $('.founded').html(`<h3>${houseInfo[0].founded}</h3>`);
 
+    app.checkForEmptyValues();
+
     console.log('house info', houseInfo);
     console.log('lord info', lordInfo);
-    if (lordInfo.name === "") {
-        $('.houseShitLordShit').append(`<h3>unknown</h3>`);
-    }
+
 }
 
 // Start app
