@@ -14,9 +14,9 @@ let founderID;
 app.checkForEmptyValues = () => {
     if (houseID == '') {
         houseID = 'Unknown';
-    } else (lordID == '') {
+    } else if(lordID == '') {
         lordID = 'Unknown';
-    } else (founderID == '') {
+    } else if(founderID == '') {
         founderID ='Unknown';
     }
 }
