@@ -118,14 +118,14 @@ app.getInfo = function () {
 app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     console.log(houseInfo, lordInfo, founderInfo)
 
-    $('.houseName').append(`<h3>${houseInfo[0].name}</h3>`);
-    $('.region').append(`<h3>${houseInfo[0].region}</h3>`);
-    $('.emblem').append(`<h3>${houseInfo[0].coatOfArms}</h3>`);
-    $('.houseMotto').append(`<h3>${houseInfo[0].words}</h3>`);
-    $('.lordTitles').append(`<h3>${houseInfo[0].titles}</h3>`);
-    $('.founder').append(`<h3>${founderInfo[0].name}</h3>`);
-    $('.currentLord').append(`<h3>${lordInfo[0].name}</h3>`);
-    $('.founded').append(`<h3>${houseInfo[0].founded}</h3>`);
+    $('.houseName').html(`<h3>${houseInfo[0].name}</h3>`);
+    $('.region').html(`<h3>${houseInfo[0].region}</h3>`);
+    $('.emblem').html(`<h3>${houseInfo[0].coatOfArms}</h3>`);
+    $('.houseMotto').html(`<h3>${houseInfo[0].words}</h3>`);
+    $('.lordTitles').html(`<h3>${houseInfo[0].titles}</h3>`);
+    $('.founder').html(`<h3>${founderInfo[0].name}</h3>`);
+    $('.currentLord').html(`<h3>${lordInfo[0].name}</h3>`);
+    $('.founded').html(`<h3>${houseInfo[0].founded}</h3>`);
 
     console.log('house info', houseInfo);
     console.log('lord info', lordInfo);
