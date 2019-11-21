@@ -30,14 +30,14 @@ app.checkForEmptyValues = () => {
 app.collectInfo = function () {
 
 
-    $('.targaryan').on('click', function () {
+    $('.targaryanSigil').on('click', function () {
         houseID = 378;
         lordID = 1303;
         founderID = "";
         app.getInfo();
     });
 
-    $('.stark').on('click', function () {
+    $('.starkSigil').on('click', function () {
         houseID = 362;
         lordID = "";
         founderID = 209;
@@ -47,49 +47,49 @@ app.collectInfo = function () {
 
     });
 
-    $('.lannister').on('click', function () {
+    $('.lannisterSigil').on('click', function () {
         houseID = 229;
         lordID = 238;
         founderID = 615;
         app.getInfo();
     });
 
-    $('.arryn').on('click', function () {
+    $('.arrynSigil').on('click', function () {
         houseID = 7;
         lordID = 894;
         founderID = 144;
         app.getInfo();
     });
 
-    $('.tully').on('click', function () {
+    $('.tullySigil').on('click', function () {
         houseID = 395;
         lordID = "";
         founderID = "";
         app.getInfo();
     });
 
-    $('.greyjoy').on('click', function () {
+    $('.greyjoySigil').on('click', function () {
         houseID = 169;
         lordID = 385;
         founderID = "";
         app.getInfo();
     });
 
-    $('.baratheon').on('click', function () {
+    $('.baratheonSigil').on('click', function () {
         houseID = 17;
         lordID = 1029;
         founderID = 797;
         app.getInfo();
     });
 
-    $('.tyrell').on('click', function () {
+    $('.tyrellSigil').on('click', function () {
         houseID = 398;
         lordID = 691;
         founderID = 75;
         app.getInfo();
     });
 
-    $('.martell').on('click', function () {
+    $('.martellSigil').on('click', function () {
         houseID = 285;
         lordID = 326;
         founderID = 1718;

@@ -1,5 +1,61 @@
-.stark{
-    background-color: blue;
-    height: 300px;
-    width: 300px;
+@import "partials/setup";
+
+img {
+width: 100%;
 }
+// Header Styling
+header {
+background-image: url(../westerosMap.jpg);
+background-color: black;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+height: 100vh;
+position: relative;
+.sigil {
+    position: absolute;
+    img {
+    height: 60px;
+    width: 50px;
+    }
+}
+
+}
+// Sigil positioning
+.starkSigil{
+    top: 25%;
+    right: 50%;
+}
+.targaryanSigil{
+    top:50%;
+    right: 45%;
+}
+.lannisterSigil{
+    top: 53%;
+    left: 42%;
+}
+.greyjoySigil{
+    top: 38%;
+    left: 40%;
+}
+.tullySigil{
+    top: 44%;
+    right: 50%;
+}
+.baratheonSigil{
+    top: 62%;
+    right: 45%;
+}
+.martellSigil{
+    top: 73%;
+    right: 48%;
+}
+.arrynSigil{
+    top: 37%;
+    left: 51%;
+}
+.tyrellSigil{
+    top: 62%;
+    right: 52%;
+}
+
