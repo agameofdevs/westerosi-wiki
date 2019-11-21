@@ -1,22 +1,31 @@
 @import "partials/setup";
+@import "partials/page2"
 
 img {
 width: 100%;
 }
+
 // Header Styling
 header {
-background-image: url(../westerosMap.jpg);
+background-image: url(../assets/westerosMap.jpg);
 background-color: black;
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center center;
 height: 100vh;
 position: relative;
-.sigil {
-    position: absolute;
+    h1 {
+        color:crimson;
+        font-size:40px;
+        transform: rotate(90deg);
+    }
+
+
+    .sigil {
+        position: absolute;
     img {
-    height: 60px;
-    width: 50px;
+        height: 60px;
+        width: 50px;
     }
 }
 
