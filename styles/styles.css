@@ -183,6 +183,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 1px solid crimson;
 }
 
+.houseShit h2 {
+  margin: 0;
+}
+
 .houseGlory {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +198,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 95vh;
 }
 
 .firstColumn, .secondColumn, .thirdColumn {
@@ -206,6 +211,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           flex-direction: column;
   width: calc(100% / 3);
   margin-right: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .houseName {
@@ -215,13 +223,30 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid orange;
   width: 100%;
   text-align: center;
 }
 
+.secondColumn .emblem {
+  height: 300px;
+  width: 350px;
+  margin: 0 auto;
+  background-color: beige;
+}
+
 .thirdColumn {
   margin-right: 0;
+}
+
+.thirdColumn .currentLordPic {
+  height: 300px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.thirdColumn .lordTitles {
+  height: 150px;
+  background-color: beige;
 }
 
 .wrapper {

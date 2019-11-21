@@ -2,24 +2,31 @@
     border:1px solid crimson;
 }
 
+.houseShit {
+    // height:100vh;
+    h2 {
+        margin:0;
+    }
+}
+
 .houseGlory {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height:95vh;
 }
 
 .firstColumn, .secondColumn, .thirdColumn {
     display:flex;
     flex-direction: column;
-    
     width:calc(100% / 3);
     margin-right: 20px;
+    justify-content: space-between;
 }
 
 .houseName {
     display: flex;
     justify-content: center;
-    border:1px solid orange;
     width:100%;
     text-align: center;
 }
@@ -29,10 +36,28 @@
 }
 
 .secondColumn {
-    
+    .familyMotto p{
+        
+    }
+
+    .emblem {
+        height:300px;
+        width:350px;
+        margin:0 auto;
+        background-color: beige;
+    }
 }
 
 .thirdColumn {
     margin-right: 0;
+    .currentLordPic {
+        height:300px;
+        width:350px;
+        margin:0 auto;
+    }
+    .lordTitles {
+        height:150px;
+        background-color:beige;
+    }
 }
 
