@@ -179,77 +179,53 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-img {
+* {
+  border: 1px solid crimson;
+}
+
+.houseGlory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.firstColumn, .secondColumn, .thirdColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% / 3);
+  margin-right: 20px;
+}
+
+.houseName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid orange;
   width: 100%;
+  text-align: center;
 }
 
-header {
-  background-image: url(../assets/westerosMap.jpg);
-  background-color: black;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  position: relative;
+.thirdColumn {
+  margin-right: 0;
 }
 
-header h1 {
-  color: crimson;
-  font-size: 40px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-header .sigil {
-  position: absolute;
-}
-
-header .sigil img {
-  height: 60px;
-  width: 50px;
-}
-
-.starkSigil {
-  top: 25%;
-  right: 50%;
-}
-
-.targaryanSigil {
-  top: 50%;
-  right: 45%;
-}
-
-.lannisterSigil {
-  top: 53%;
-  left: 42%;
-}
-
-.greyjoySigil {
-  top: 38%;
-  left: 40%;
-}
-
-.tullySigil {
-  top: 44%;
-  right: 50%;
-}
-
-.baratheonSigil {
-  top: 62%;
-  right: 45%;
-}
-
-.martellSigil {
-  top: 73%;
-  right: 48%;
-}
-
-.arrynSigil {
-  top: 37%;
-  left: 51%;
-}
-
-.tyrellSigil {
-  top: 62%;
-  right: 53%;
+.wrapper {
+  max-width: 1240px;
+  width: 80%;
+  margin: 0 auto;
 }

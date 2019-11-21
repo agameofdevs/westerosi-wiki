@@ -1,0 +1,38 @@
+* {
+    border:1px solid crimson;
+}
+
+.houseGlory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.firstColumn, .secondColumn, .thirdColumn {
+    display:flex;
+    flex-direction: column;
+    
+    width:calc(100% / 3);
+    margin-right: 20px;
+}
+
+.houseName {
+    display: flex;
+    justify-content: center;
+    border:1px solid orange;
+    width:100%;
+    text-align: center;
+}
+
+.firstColumn {
+    // width:
+}
+
+.secondColumn {
+    
+}
+
+.thirdColumn {
+    margin-right: 0;
+}
+
