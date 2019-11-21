@@ -41,8 +41,6 @@ app.collectInfo = function () {
         houseID = 362;
         lordID = "";
         founderID = 209;
-        // app.checkForEmptyValues();
-        console.log('click')
         app.getInfo();
 
     });
@@ -133,6 +131,8 @@ app.getInfo = function () {
 app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     console.log(houseInfo, lordInfo, founderInfo)
 
+    // let emblemPath = "assets/emblem3"
+
     $('.houseName').html(`<h3>${houseInfo[0].name}</h3>`);
     $('.region').html(`<h3>${houseInfo[0].region}</h3>`);
     $('.emblem').html(`<h3>${houseInfo[0].coatOfArms}</h3>`);
@@ -141,6 +141,9 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.founder').html(`<h3>${founderInfo[0].name}</h3>`);
     $('.currentLord').html(`<h3>${lordInfo[0].name}</h3>`);
     $('.founded').html(`<h3>${houseInfo[0].founded}</h3>`);
+    $('.emblem').html(`<img src="assets/emblem${houseID}.jpg" alt="image of house emblem">`);
+    $('.currentLordImage').html(`<img src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
+
 
     app.checkForEmptyValues();
 
