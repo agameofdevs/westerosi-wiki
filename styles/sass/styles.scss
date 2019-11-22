@@ -1,10 +1,15 @@
-@import "partials/setup";
+
 @import "partials/page2";
+@import "partials/setup";
 
 .wrapper{
     max-width: 1240px;
     width: 80%;
     margin: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 img {
@@ -21,11 +26,23 @@ background-repeat: no-repeat;
 background-position: center center;
 height: 100vh;
 position: relative;
+font-family: url(../assets/gameOfThrones.ttf);
     h1 {
-        color:crimson;
-        font-size:40px;
-        transform: rotate(90deg);
+        position: absolute;
     }
+
+        .leftHalfHeader {
+            // position: absolute;
+            top:300px;
+            left:0;
+        }
+
+        .rightHalfHeader {
+            top:300px;
+            right:150px;
+            transform: rotate(-270deg);
+        }
+    
 
 
     .sigil {
@@ -37,7 +54,7 @@ position: relative;
 }
 
 }
-// Sigil positioning
+// Sigil positioning for interactive map
 .starkSigil{
     top: 25%;
     right: 50%;
