@@ -13,6 +13,7 @@ let founderID;
 
 
 
+
 app.checkForEmptyValues = () => {
     if (lordID == "") {
 
@@ -23,9 +24,6 @@ app.checkForEmptyValues = () => {
         $('.founderContainer').html(`<h3>Unknown</h3>`);
     }
 }
-
-
-
 
 app.collectInfo = function () {
 
@@ -160,6 +158,17 @@ app.init = function () {
     app.displayInfo;
 }
 
+//document ready
 $(function () {
     app.init();
+    $('header').show();
+    $('main').hide();
+
+    $('.sigil').on('click', function () {
+        // $('.landing').hide(1000);
+        $('main').show();
+        $('html, body').animate({
+            scrollTop: $('main').offset().top
+        }, 1000)
+    });
 });
