@@ -20,6 +20,7 @@ h3 {
 .houseContainer{
     display: flex;
     flex-direction: column;
+    padding: 60px 0;
     // flex-wrap: nowrap;
     // position: relative;
 }
@@ -47,7 +48,9 @@ h3 {
 .firstColumn {
     justify-content: flex-start;
     .historyContainer{
-    
+        .history{
+            text-align: left;
+        }
     }
 }
 

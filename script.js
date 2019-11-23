@@ -131,22 +131,26 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
 
     // let emblemPath = "assets/emblem3"
 
+    houseInfo[0].titles.join(", ")
+
+    // console.log(lordInfo[0].name);
+
     $('.houseName').html(`<h2>${houseInfo[0].name}</h2>`);
     $('.region').html(`<p>${houseInfo[0].region}</p>`);
     $('.emblem').html(`<h3>${houseInfo[0].coatOfArms}</h3>`);
     $('.houseMotto').html(`<p>${houseInfo[0].words}</p>`);
-    $('.lordTitles').html(`<p>${houseInfo[0].titles}</p>`);
+    $('.lordTitles').html(`<p>${houseInfo[0].titles.join(', ')}</p>`);
     $('.founder').html(`<p>${founderInfo[0].name}</p>`);
     $('.currentLordName').html(`<p>${lordInfo[0].name}</p>`);
     $('.founded').html(`<p>${houseInfo[0].founded}</p>`);
     $('.emblem').html(`<img src="assets/emblem${houseID}.jpg" alt="image of house emblem">`);
     $('.currentLordImage').html(`<img src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
 
-    console.log(lordInfo[0].name);
+    
     app.checkForEmptyValues();
 
-    console.log('house info', houseInfo);
-    console.log('lord info', lordInfo);
+    // console.log('house info', houseInfo);
+    // console.log('lord info', lordInfo);
 
 }
 
