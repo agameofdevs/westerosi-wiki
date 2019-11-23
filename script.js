@@ -162,7 +162,7 @@ app.init = function () {
 $(function () {
     app.init();
     $('header').show();
-    $('main').hide();
+    // $('main').hide();
 
     $('.sigil').on('click', function () {
         // $('.landing').hide(1000);

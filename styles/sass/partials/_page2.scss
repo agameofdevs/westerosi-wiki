@@ -16,6 +16,12 @@ h3 {
     font-size:1rem;
 }
 
+.houseContainer{
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: nowrap;
+    position: relative;
+}
 
 .houseGlory {
     display: flex;
@@ -33,16 +39,17 @@ h3 {
 }
 
 .houseName {
-    display: flex;
-    justify-content: center;
-    width:100%;
+    // display: flex;
+    // justify-content: center;
+    // width:100%;
     text-align: center;
+    margin: 0 auto;
 }
 
 .firstColumn {
     // justify-content: space-evenly;
     .historyContainer{
-        margin-bottom: 60%;
+       
     }
 }
 
@@ -74,3 +81,14 @@ h3 {
     }
 }
 
+.arrowButton{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    img{
+        transform: rotate(-45deg);
+
+    }
+}
