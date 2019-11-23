@@ -8,6 +8,7 @@ main {
     background:url(../assets/page2Background3.jpg);
     background-size:cover;
     color:white;
+    position: relative;
     
     
 }
@@ -20,7 +21,7 @@ h3 {
     display: flex;
     flex-direction: column;
     // flex-wrap: nowrap;
-    position: relative;
+    // position: relative;
 }
 
 .houseGlory {
@@ -39,17 +40,14 @@ h3 {
 }
 
 .houseName {
-    // display: flex;
-    // justify-content: center;
-    // width:100%;
     text-align: center;
     margin: 0 auto;
 }
 
 .firstColumn {
-    // justify-content: space-evenly;
+    justify-content: flex-start;
     .historyContainer{
-       
+    
     }
 }
 
@@ -59,36 +57,31 @@ h3 {
     // }
 
     .emblem {
-        // height:300px;
+
         width:100%;
         margin:0 auto;
-        // margin-bottom: 70%;
-        // background-color: beige;
+
     }
 }
 
 .thirdColumn {
     margin-right: 0;
     .currentLordImage {
-        // height:300px;
         width:100%;
-        margin:0 auto;
-        // background-color: lightcyan;
-        
+        margin:0 auto;        
     }
     .lordTitles {
-        height:150px;
+        // height:150px;
     }
 }
 
 .arrowButton{
     height: 80px;
     width: 80px;
-    position: absolute;
-    right: 0;
-    top: 30px;
+    position: fixed;
+    right: 30px;
+    top: 50%;
     img{
         transform: rotate(-45deg);
-
     }
 }

@@ -183,6 +183,7 @@ main {
   background: url(../assets/page2Background3.jpg);
   background-size: cover;
   color: white;
+  position: relative;
 }
 
 h3 {
@@ -197,7 +198,6 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
 }
 
 .houseGlory {
@@ -233,6 +233,12 @@ h3 {
   margin: 0 auto;
 }
 
+.firstColumn {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .secondColumn .emblem {
   width: 100%;
   margin: 0 auto;
@@ -247,16 +253,12 @@ h3 {
   margin: 0 auto;
 }
 
-.thirdColumn .lordTitles {
-  height: 150px;
-}
-
 .arrowButton {
   height: 80px;
   width: 80px;
-  position: absolute;
-  right: 0;
-  top: 30px;
+  position: fixed;
+  right: 30px;
+  top: 50%;
 }
 
 .arrowButton img {
@@ -280,17 +282,19 @@ h1 {
 }
 
 h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
   margin-bottom: 30px;
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 5.5rem;
+  letter-spacing: 5px;
   margin: 0;
 }
 
 h3 {
   font-size: 3.5rem;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 p {

@@ -162,13 +162,19 @@ app.init = function () {
 $(function () {
     app.init();
     $('header').show();
-    // $('main').hide();
+    $('main').hide();
 
     $('.sigil').on('click', function () {
-        // $('.landing').hide(1000);
+        
         $('main').show();
         $('html, body').animate({
             scrollTop: $('main').offset().top
         }, 1000)
     });
+
+    $('.arrowButton').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('header').offset().top
+        }, 1000)
+    })
 });
