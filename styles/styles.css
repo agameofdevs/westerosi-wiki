@@ -180,6 +180,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+* {
+  border: 1px solid crimson;
+}
+
 main {
   background: url(../assets/page2Background3.jpg);
   background-size: cover;
@@ -238,21 +242,20 @@ h3 {
   height: 300px;
   width: 100%;
   margin: 0 auto;
-  background-color: beige;
 }
 
 .thirdColumn {
   margin-right: 0;
 }
 
-.thirdColumn .currentLordPic {
+.thirdColumn .currentLordImage {
+  height: 300px;
   width: 100%;
   margin: 0 auto;
 }
 
 .thirdColumn .lordTitles {
   height: 150px;
-  background-color: beige;
 }
 
 @font-face {
@@ -271,13 +274,18 @@ h1 {
 }
 
 h2 {
-  font-family: ‘Cinzel’, serif;
+  font-family: ‘Cinzel Decorative’, cursive;
   margin: 0;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 h3 {
-  font-family: ‘Cinzel’, serif;
+  font-family: ‘Cinzel Decorative’, cursive;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 .wrapper {

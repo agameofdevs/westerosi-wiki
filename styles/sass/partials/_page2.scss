@@ -1,7 +1,7 @@
 
 
 * {
-    // border:1px solid crimson;
+    border:1px solid crimson;
 }
 
 main {
@@ -58,21 +58,21 @@ h3 {
         height:300px;
         width:100%;
         margin:0 auto;
-        background-color: beige;
+        // background-color: beige;
     }
 }
 
 .thirdColumn {
     margin-right: 0;
-    .currentLordPic {
-        // height:300px;
+    .currentLordImage {
+        height:300px;
         width:100%;
         margin:0 auto;
+        // background-color: lightcyan;
         
     }
     .lordTitles {
         height:150px;
-        background-color:beige;
     }
 }
 

@@ -16,11 +16,11 @@ let founderID;
 app.checkForEmptyValues = () => {
     if (lordID == "") {
 
-        $('.currentLord').html(`<h3>Unknown</h3>`);
+        $('.currentLordContainer').html(`<h3>Unknown</h3>`);
 
     } else if (founderID == "") {
 
-        $('.founder').html(`<h3>Unknown</h3>`);
+        $('.founderContainer').html(`<h3>Unknown</h3>`);
     }
 }
 
@@ -133,18 +133,18 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
 
     // let emblemPath = "assets/emblem3"
 
-    $('.houseName').html(`<h3>${houseInfo[0].name}</h3>`);
-    $('.region').html(`<h3>${houseInfo[0].region}</h3>`);
+    $('.houseName').html(`<h2>${houseInfo[0].name}</h2>`);
+    $('.region').html(`<p>${houseInfo[0].region}</p>`);
     $('.emblem').html(`<h3>${houseInfo[0].coatOfArms}</h3>`);
-    $('.houseMotto').html(`<h3>${houseInfo[0].words}</h3>`);
-    $('.lordTitles').html(`<h3>${houseInfo[0].titles}</h3>`);
-    $('.founder').html(`<h3>${founderInfo[0].name}</h3>`);
-    $('.currentLord').html(`<h3>${lordInfo[0].name}</h3>`);
-    $('.founded').html(`<h3>${houseInfo[0].founded}</h3>`);
+    $('.houseMotto').html(`<p>${houseInfo[0].words}</p>`);
+    $('.lordTitles').html(`<p>${houseInfo[0].titles}</p>`);
+    $('.founder').html(`<p>${founderInfo[0].name}</p>`);
+    $('.currentLordName').html(`<p>${lordInfo[0].name}</p>`);
+    $('.founded').html(`<p>${houseInfo[0].founded}</p>`);
     $('.emblem').html(`<img src="assets/emblem${houseID}.jpg" alt="image of house emblem">`);
     $('.currentLordImage').html(`<img src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
 
-
+    console.log(lordInfo[0].name);
     app.checkForEmptyValues();
 
     console.log('house info', houseInfo);

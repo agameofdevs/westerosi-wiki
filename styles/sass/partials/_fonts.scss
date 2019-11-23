@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "gameOfThronesFont";
     src: url(../assets/gameOfThrones.ttf);
@@ -8,19 +6,24 @@
 
 h1 {
     color:#df8931;
-        font-size:8rem;
-        transform: rotate(270deg);
-        letter-spacing: 0.8rem;
-        line-height: 0;
-        font-family: gameOfThronesFont;
+    font-size:8rem;
+    transform: rotate(270deg);
+    letter-spacing: 0.8rem;
+    line-height: 0;
+    font-family: gameOfThronesFont;
 }
 
 h2 {
-        font-family: ‘Cinzel’, serif;
+        font-family: ‘Cinzel Decorative’, cursive;
         margin:0;
-        font-size:3rem;
+        font-size:5rem;
     }
 
-    h3 {
-    font-family: ‘Cinzel’, serif;
+h3 {
+    font-family: ‘Cinzel Decorative’, cursive;
+    font-size: 3rem;
+    }
+    
+p {
+    font-size:1.6rem;
 }
