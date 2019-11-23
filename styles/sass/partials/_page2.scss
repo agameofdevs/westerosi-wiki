@@ -21,7 +21,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height:95vh;
+    // height:100vh;
 }
 
 .firstColumn, .secondColumn, .thirdColumn {
@@ -41,20 +41,21 @@ h3 {
 
 .firstColumn {
     // justify-content: space-evenly;
-    .history{
+    .historyContainer{
         margin-bottom: 60%;
     }
 }
 
 .secondColumn {
-    .familyMotto p{
+    // .familyMotto p{
         
-    }
+    // }
 
     .emblem {
-        height:300px;
+        // height:300px;
         width:100%;
         margin:0 auto;
+        // margin-bottom: 70%;
         // background-color: beige;
     }
 }
@@ -62,7 +63,7 @@ h3 {
 .thirdColumn {
     margin-right: 0;
     .currentLordImage {
-        height:300px;
+        // height:300px;
         width:100%;
         margin:0 auto;
         // background-color: lightcyan;

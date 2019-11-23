@@ -200,7 +200,6 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 95vh;
 }
 
 .firstColumn, .secondColumn, .thirdColumn {
@@ -229,12 +228,11 @@ h3 {
   text-align: center;
 }
 
-.firstColumn .history {
+.firstColumn .historyContainer {
   margin-bottom: 60%;
 }
 
 .secondColumn .emblem {
-  height: 300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -244,7 +242,6 @@ h3 {
 }
 
 .thirdColumn .currentLordImage {
-  height: 300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -264,23 +261,27 @@ h1 {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   letter-spacing: 0.8rem;
-  line-height: 0;
+  margin: 0;
   font-family: gameOfThronesFont;
 }
 
-h2 {
+h2, h3 {
   font-family: 'Cinzel Decorative', cursive;
-  margin: 0;
-  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 4.5rem;
 }
 
 h3 {
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 p {
-  font-size: 1.6rem;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .wrapper {
@@ -327,18 +328,22 @@ header .rightHalfHeader {
 
 header .sigil {
   position: absolute;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 header .sigil img {
-  height: 30px;
-  width: 25px;
+  height: 60px;
+  width: 50px;
+  -webkit-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
 }
 
 header .sigil img:hover {
   height: 60px;
   width: 50px;
-  -webkit-transition: width 0.5s, height 0.5s;
-  transition: width 0.5s, height 0.5s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .starkSigil {

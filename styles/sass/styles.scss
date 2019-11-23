@@ -47,16 +47,18 @@ font-family: url(../assets/gameOfThrones.ttf);
 
     .sigil {
         position: absolute;
+        animation-duration: 0.5s;
     img {
-        height: 30px;
-        width: 25px;
+        height: 60px;
+        width: 50px;
+        transition: .35s ease-in-out;
     }
 }
 
 .sigil img:hover {
     height:60px;
     width:50px;
-    transition:width 0.5s, height 0.5s;
+    transform: scale(1.5);
 
 }   
 

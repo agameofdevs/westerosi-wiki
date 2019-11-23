@@ -9,21 +9,28 @@ h1 {
     font-size:8rem;
     transform: rotate(270deg);
     letter-spacing: 0.8rem;
-    line-height: 0;
+    
+    margin: 0;
     font-family: gameOfThronesFont;
 }
 
+h2,h3{
+    font-family: 'Cinzel Decorative', cursive;
+    margin-bottom: 30px;
+}
+
+
 h2 {
-        font-family: 'Cinzel Decorative', cursive;
-        margin:0;
-        font-size:5rem;
+        
+        font-size:4.5rem;
     }
 
 h3 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 3rem;
+    font-size: 3.5rem;
     }
     
 p {
-    font-size:1.6rem;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size:2.5rem;
+    margin: 0;
 }
