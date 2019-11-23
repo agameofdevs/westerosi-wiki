@@ -1,6 +1,6 @@
-
-@import "partials/page2";
 @import "partials/setup";
+@import "partials/page2";
+@import "partials/fonts";
 
 .wrapper{
     max-width: 1240px;
@@ -48,10 +48,17 @@ font-family: url(../assets/gameOfThrones.ttf);
     .sigil {
         position: absolute;
     img {
-        height: 60px;
-        width: 50px;
+        height: 30px;
+        width: 25px;
     }
 }
+
+.sigil img:hover {
+    height:60px;
+    width:50px;
+    transition:width 0.5s, height 0.5s;
+
+}   
 
 }
 // Sigil positioning for interactive map

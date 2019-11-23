@@ -1,7 +1,18 @@
-@import "partials/../setup";
+
 
 * {
     // border:1px solid crimson;
+}
+
+main {
+    background:url(../assets/page2Background3.jpg);
+    background-size:cover;
+    color:white;
+    
+}
+
+h3 {
+    font-size:1rem;
 }
 
 .houseShit {

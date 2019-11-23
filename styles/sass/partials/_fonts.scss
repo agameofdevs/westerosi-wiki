@@ -1,4 +1,4 @@
-@import "partials/fonts";
+
 
 @font-face {
     font-family: "gameOfThronesFont";
@@ -10,7 +10,7 @@ h1 {
     color:#df8931;
         font-size:8rem;
         transform: rotate(270deg);
-        letter-spacing: 1rem;
+        letter-spacing: 0.8rem;
         line-height: 0;
         font-family: gameOfThronesFont;
 }
