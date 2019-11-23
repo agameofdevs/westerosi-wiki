@@ -1,4 +1,3 @@
-@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -180,10 +179,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-* {
-  border: 1px solid crimson;
-}
-
 main {
   background: url(../assets/page2Background3.jpg);
   background-size: cover;
@@ -274,13 +269,13 @@ h1 {
 }
 
 h2 {
-  font-family: ‘Cinzel Decorative’, cursive;
+  font-family: 'Cinzel Decorative', cursive;
   margin: 0;
   font-size: 5rem;
 }
 
 h3 {
-  font-family: ‘Cinzel Decorative’, cursive;
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 3rem;
 }
 
