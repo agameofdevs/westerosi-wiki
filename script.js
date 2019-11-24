@@ -16,17 +16,13 @@ let founderID;
 
 app.checkForEmptyValues = () => {
     if (lordID == "") {
-
-        $('.currentLordContainer').html(`<h3>Unknown</h3>`);
-
+        $('.currentLordName').html(`<p>Unknown</p>`);
     } else if (founderID == "") {
-
-        $('.founderContainer').html(`<h3>Unknown</h3>`);
+        $('.founder').html(`<p>Unknown</p>`);
     }
 }
 
 app.collectInfo = function () {
-
 
     $('.targaryanSigil').on('click', function () {
         houseID = 378;
@@ -40,7 +36,6 @@ app.collectInfo = function () {
         lordID = "";
         founderID = 209;
         app.getInfo();
-
     });
 
     $('.lannisterSigil').on('click', function () {
@@ -91,10 +86,6 @@ app.collectInfo = function () {
         founderID = 1718;
         app.getInfo();
     });
-
-
-
-
 }
 
 // Make AJAX request with user inputted data
@@ -143,8 +134,8 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.founder').html(`<p>${founderInfo[0].name}</p>`);
     $('.currentLordName').html(`<p>${lordInfo[0].name}</p>`);
     $('.founded').html(`<p>${houseInfo[0].founded}</p>`);
-    $('.emblem').html(`<img src="assets/emblem${houseID}.jpg" alt="image of house emblem">`);
-    $('.currentLordImage').html(`<img src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
+    $('.emblem').html(`<img class="animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem">`);
+    $('.currentLordImage').html(`<img class="animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
 
     
     app.checkForEmptyValues();

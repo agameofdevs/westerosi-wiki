@@ -20,7 +20,7 @@ h3 {
 .houseContainer{
     display: flex;
     flex-direction: column;
-    padding: 60px 0;
+    padding: 20px 0;
     // flex-wrap: nowrap;
     // position: relative;
 }
@@ -87,4 +87,8 @@ h3 {
     img{
         transform: rotate(-45deg);
     }
+}
+
+.houseMotto {
+    // padding-bottom:20px;
 }
