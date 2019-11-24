@@ -240,7 +240,7 @@ h3 {
           justify-content: space-evenly;
 }
 
-.firstColumn .historyContainer .history {
+.firstColumn .historyContainer p {
   text-align: left;
 }
 

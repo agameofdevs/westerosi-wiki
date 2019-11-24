@@ -28,6 +28,8 @@ app.collectInfo = function () {
         houseID = 378;
         lordID = 1303;
         founderID = "";
+        $('.history').html('.targaryanHistory')
+        $('.targaryanHistory').show();
         app.getInfo();
     });
 
@@ -35,6 +37,7 @@ app.collectInfo = function () {
         houseID = 362;
         lordID = "";
         founderID = 209;
+        $('.starkHistory').show();
         app.getInfo();
     });
 
@@ -42,6 +45,7 @@ app.collectInfo = function () {
         houseID = 229;
         lordID = 238;
         founderID = 615;
+        $('.lannisterHistory').show();
         app.getInfo();
     });
 
@@ -49,6 +53,7 @@ app.collectInfo = function () {
         houseID = 7;
         lordID = 894;
         founderID = 144;
+        $('.arrynHistory').show();
         app.getInfo();
     });
 
@@ -56,6 +61,7 @@ app.collectInfo = function () {
         houseID = 395;
         lordID = "";
         founderID = "";
+        $('.tullyHistory').show();
         app.getInfo();
     });
 
@@ -63,6 +69,7 @@ app.collectInfo = function () {
         houseID = 169;
         lordID = 385;
         founderID = "";
+        $('.greyjoyHistory').show();
         app.getInfo();
     });
 
@@ -70,6 +77,7 @@ app.collectInfo = function () {
         houseID = 17;
         lordID = 1029;
         founderID = 797;
+        $('.baratheonHistory').show();
         app.getInfo();
     });
 
@@ -77,6 +85,7 @@ app.collectInfo = function () {
         houseID = 398;
         lordID = 691;
         founderID = 75;
+        $('.tyrellHistory').show();
         app.getInfo();
     });
 
@@ -84,6 +93,7 @@ app.collectInfo = function () {
         houseID = 285;
         lordID = 326;
         founderID = 1718;
+        $('.martellHistory').show();
         app.getInfo();
     });
 }
@@ -172,4 +182,6 @@ $(function () {
             scrollTop: $('header').offset().top
         }, 1000)
     })
+
+    $('.history').hide();
 });
