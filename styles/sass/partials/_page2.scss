@@ -1,106 +1,96 @@
-
-
 * {
-    // border:1px solid crimson;
+  // border:1px solid crimson;
 }
 
 main {
-    background:url(../assets/page2Background3.jpg);
-    background-size:cover;
-    color:white;
-    position: relative;
-    height:100vh;   
+  background: url(../assets/page2Background3.jpg);
+  background-size: cover;
+  color: white;
+  position: relative;
+  height: 100vh;
 }
 
 h3 {
-    font-size:1rem;
+  font-size: 1rem;
 }
 
-.houseContainer{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    // flex-wrap: nowrap;
-    // position: relative;
+.houseContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  // flex-wrap: nowrap;
+  // position: relative;
 }
 
 .houseGlory {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // height:100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.firstColumn, .secondColumn, .thirdColumn {
-    display:flex;
-    flex-direction: column;
-    width:calc(100% / 3);
-    margin-right: 20px;
-    justify-content: space-between;
+.firstColumn,
+.secondColumn,
+.thirdColumn {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  margin-right: 20px;
 }
 
 .houseName {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .firstColumn {
-    justify-content: space-evenly;
-    .historyContainer{
-        .history{
-            text-align: left;
-        }
+  justify-content: space-evenly;
+  .historyContainer {
+    .history {
+      text-align: left;
     }
+  }
 }
 
 .secondColumn {
-    // .familyMotto p{
-        
-    // }
-
-    .emblem {
-
-        width:100%;
-        margin:0 auto;
-
+  .emblem {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    img {
+      margin: 0 auto;
+      max-width: 300px;
+    //   margin-top: 10px;
     }
+  }
 }
 
 .thirdColumn {
-    margin-right: 0;
-    .currentLordImage {
-        width:100%;
-        margin:0 auto;        
+  margin-right: 0;
+  .currentLordImage {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    img {
+      margin: 0 auto;
+      max-width: 300px;
+    //   margin-top: 10px;
     }
-    .lordTitles {
-        // height:150px;
-    }
+  }
 }
 
-.arrowButton{
-    height: 80px;
-    width: 80px;
-    position: fixed;
-    right: 30px;
-    top: 50%;
-    img{
-        transform: rotate(-45deg);
-    }
-}
-
-.houseMotto {
-    // padding-bottom:20px;
+.arrowButton {
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  img {
+    transform: rotate(-45deg);
+  }
 }
 
 .lordImage {
-    margin:0 auto;
-    max-width: 300px;
-    margin-top:10px;
-    
-}
-
-.emblem img{
-    margin:0 auto;
-    max-width: 300px;
-    margin-top:10px;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 10px;
 }
