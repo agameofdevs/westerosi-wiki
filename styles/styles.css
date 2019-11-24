@@ -184,6 +184,7 @@ main {
   background-size: cover;
   color: white;
   position: relative;
+  height: 100vh;
 }
 
 h3 {
@@ -271,6 +272,18 @@ h3 {
           transform: rotate(-45deg);
 }
 
+.lordImage {
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.emblem img {
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
 @font-face {
   font-family: "gameOfThronesFont";
   src: url(../assets/gameOfThrones.ttf);
@@ -296,19 +309,20 @@ h2, h3 {
 
 h2 {
   font-family: 'Uncial Antiqua', cursive;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   letter-spacing: 5px;
-  margin: 0;
+  margin: 0px;
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 2.6rem;
   font-family: 'Cinzel Decorative', cursive;
+  margin-bottom: 10px;
 }
 
 p {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin: 0;
   text-align: center;
 }

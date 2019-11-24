@@ -9,8 +9,7 @@ main {
     background-size:cover;
     color:white;
     position: relative;
-    
-    
+    height:100vh;   
 }
 
 h3 {
@@ -91,4 +90,17 @@ h3 {
 
 .houseMotto {
     // padding-bottom:20px;
+}
+
+.lordImage {
+    margin:0 auto;
+    max-width: 300px;
+    margin-top:10px;
+    
+}
+
+.emblem img{
+    margin:0 auto;
+    max-width: 300px;
+    margin-top:10px;
 }

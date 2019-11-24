@@ -134,8 +134,8 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.founder').html(`<p>${founderInfo[0].name}</p>`);
     $('.currentLordName').html(`<p>${lordInfo[0].name}</p>`);
     $('.founded').html(`<p>${houseInfo[0].founded}</p>`);
-    $('.emblem').html(`<img class="animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem">`);
-    $('.currentLordImage').html(`<img class="animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
+    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem">`);
+    $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
 
     
     app.checkForEmptyValues();

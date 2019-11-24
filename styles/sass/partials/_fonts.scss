@@ -9,13 +9,11 @@ h1 {
     font-size:8rem;
     transform: rotate(270deg);
     letter-spacing: 0.8rem;
-    
     margin: 0;
     font-family: gameOfThronesFont;
 }
 
 h2,h3{
-    
     margin-bottom: 30px;
 }
 
@@ -24,22 +22,21 @@ h2,h3{
 }
 
 h2 {
-        
     font-family: 'Uncial Antiqua', cursive;
-        font-size:5.5rem;
-        letter-spacing: 5px;
-        margin: 0;
-        
-    }
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    margin: 0px;    
+}
 
 h3 {
-    font-size: 3.5rem;
+    font-size: 2.6rem;
     font-family: 'Cinzel Decorative', cursive;
+    margin-bottom:10px;
     }
     
 p {
     font-family: 'Ibarra Real Nova', serif;
-    font-size:2.5rem;
+    font-size:2.3rem;
     margin: 0;
     text-align: center;
 }
