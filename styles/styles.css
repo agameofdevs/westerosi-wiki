@@ -236,9 +236,9 @@ h3 {
 }
 
 .firstColumn {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .firstColumn .historyContainer .history {
@@ -322,9 +322,15 @@ h3 {
 
 p {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   margin: 0;
   text-align: center;
+}
+
+.lordTitles p {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 25px;
 }
 
 .wrapper {
