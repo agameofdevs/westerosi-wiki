@@ -320,6 +320,7 @@ h1 {
   letter-spacing: 0.8rem;
   margin: 0;
   font-family: gameOfThronesFont;
+  text-shadow: 4px 4px black;
 }
 
 h2, h3 {
@@ -381,7 +382,7 @@ header {
   font-family: url(../assets/gameOfThrones.ttf);
 }
 
-@media (max-width: 570px) {
+@media (max-width: 670px) {
   header {
     background-size: cover;
   }
