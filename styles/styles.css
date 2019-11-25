@@ -339,6 +339,39 @@ p {
   font-weight: 800;
 }
 
+@media (max-width: 1366px) {
+  header .leftHalfHeader {
+    left: -100px;
+  }
+  header .rightHalfHeader {
+    right: 70px;
+  }
+}
+
+@media (max-width: 1185px) {
+  header .leftHalfHeader {
+    left: -160px;
+  }
+  header .rightHalfHeader {
+    right: 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  header .leftHalfHeader {
+    left: -210px;
+  }
+  header .rightHalfHeader {
+    right: -50px;
+  }
+  .houseGlory {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .wrapper {
   max-width: 1240px;
   width: 80%;
@@ -371,12 +404,12 @@ header h1 {
 }
 
 header .leftHalfHeader {
-  top: 300px;
+  top: 350px;
   left: 0;
 }
 
 header .rightHalfHeader {
-  top: 300px;
+  top: 350px;
   right: 150px;
   -webkit-transform: rotate(-270deg);
           transform: rotate(-270deg);
@@ -384,8 +417,8 @@ header .rightHalfHeader {
 
 header .sigil {
   position: absolute;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
 }
 
 header .sigil img {
@@ -398,8 +431,8 @@ header .sigil img {
 header .sigil img:hover {
   height: 60px;
   width: 50px;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
 }
 
 .starkSigil {

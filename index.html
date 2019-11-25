@@ -5,29 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link
-        href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Uncial+Antiqua|Cinzel+Decorative:400,700,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Uncial+Antiqua|Cinzel+Decorative:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
     <link rel="stylesheet" href="styles/styles.css">
-
     <title>Westerosi Wiki</title>
-
 </head>
 
 <body>
-
-
-
     <header>
-        <!-- interactive map will be displayed here  -->
+        <!-- Interactive map will be displayed here  -->
         <div class="wrapper">
             <h1 class="leftHalfHeader">WESTEROSI</h1>
             <h1 class="rightHalfHeader">WIKI</h1>
         </div>
 
-        <!-- divs of all the great houses that will be clickable and trigger an event listener to append the house ID from the API -->
+        <!-- House sigils-->
         <div class="starkSigil sigil animated infinite pulse">
             <img src="assets/houseStarkSigil.png" alt="Sigil image of the House Stark showing head of a wolf">
         </div>
@@ -58,14 +50,10 @@
         <div class="tyrellSigil sigil animated infinite pulse">
             <img src="assets/houseTyrellSigil.png" alt="Sigil image of the house Tyrell showing a golden rose">
         </div>
-
-
     </header>
 
 
-
     <main>
-
         <div class="arrowButton animated infinite pulse">
             <img src="assets/arrow.png" alt="">
         </div>
@@ -84,7 +72,6 @@
                     <div class="historyContainer">
                         <h3>History</h3>
                         <div class="history">
-
 
                             <p class="starkHistory">
                                 House Stark of Winterfell is one of the Great Houses of Westeros and the principal noble
@@ -209,16 +196,14 @@
                     </div>
 
                     <div class="currentLordImage">
-                        <!-- image placeholder -->
+                        <!-- Images of current lord will appear here -->
                     </div>
 
                     <div class="lordTitlesContainer">
                         <h3>Lord Title</h3>
                         <p class="lordTitles"></p>
                     </div>
-
                 </section>
-
             </div>
 
 
@@ -228,7 +213,6 @@
 <script src='https://code.jquery.com/jquery-3.2.1.min.js'
     integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
 <script src="script.js"></script>
-
 </html>
 
 

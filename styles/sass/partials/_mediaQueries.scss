@@ -1,0 +1,39 @@
+@media (max-width: 1366px) {
+    header { 
+        .leftHalfHeader {
+            left:-100px;
+        }
+
+        .rightHalfHeader {
+            right:70px;
+        }
+    }
+}
+
+@media (max-width: 1185px) {
+    header {
+        .leftHalfHeader {
+            left:-160px;
+        }
+
+        .rightHalfHeader {
+            right:10px;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    header {
+        .leftHalfHeader {
+            left:-210px;
+        }
+
+        .rightHalfHeader {
+            right:-50px;
+        }
+    }
+
+    .houseGlory {
+        flex-direction: column;
+    }
+}

@@ -1,6 +1,7 @@
 @import "partials/setup";
 @import "partials/page2";
 @import "partials/fonts";
+@import "partials/mediaQueries";
 
 .wrapper{
     max-width: 1240px;
@@ -33,13 +34,12 @@ font-family: url(../assets/gameOfThrones.ttf);
     }
 
         .leftHalfHeader {
-            // position: absolute;
-            top:300px;
+            top:350px;
             left:0;
         }
 
         .rightHalfHeader {
-            top:300px;
+            top:350px;
             right:150px;
             transform: rotate(-270deg);
         }
@@ -48,7 +48,7 @@ font-family: url(../assets/gameOfThrones.ttf);
 
     .sigil {
         position: absolute;
-        animation-duration: 0.5s;
+        animation-duration: 0.8s;
     img {
         height: 60px;
         width: 50px;
@@ -59,8 +59,7 @@ font-family: url(../assets/gameOfThrones.ttf);
 .sigil img:hover {
     height:60px;
     width:50px;
-    transform: scale(1.5);
-
+    transform: scale(1.7);
 }   
 
 }
