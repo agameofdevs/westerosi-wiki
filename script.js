@@ -11,9 +11,11 @@ let founderID;
 
 app.checkForEmptyValues = () => {
     if (lordID == "") {
-        $('.currentLordName').html(`<p>Unknown</p>`);
-    } else if (founderID == "" || founderID == null || founderID == undefined) {
-        $('.founder').html(`<p>Unknown</p>`);
+        $('.currentLordName').html('Unknown');
+    }
+    
+    if (founderID == "") {
+        $('.founder').html('Unknown');
     }
 }
 
@@ -149,6 +151,10 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.founded').html(`${houseInfo[0].founded}`);
     $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem for the ${houseInfo[0].name}">`);
     $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord, ${lordInfo[0].name} from ${houseInfo[0].name}">`);
+
+    if (houseInfo[0].founded == "") {
+        $('.founded').html('Unknown')
+    }
 
     app.checkForEmptyValues();
 }
