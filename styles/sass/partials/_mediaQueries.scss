@@ -5,8 +5,31 @@
     }
 }
 
+@mixin mqTablet{
+    @media(max-width: 860px){
+        @content;
+    }
+}
+
 @mixin mqPhone{
     @media(max-width: 570px){
+        @content;
+    }
+}
+
+// Vipin's Edits
+@mixin mqLaptop2 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin mqTablet2 {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+@mixin mqPhone2 {
+    @media (max-width:930px) {
         @content;
     }
 }

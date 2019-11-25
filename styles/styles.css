@@ -182,9 +182,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 main {
   background: url(../assets/page2Background3.jpg);
   background-size: cover;
+  background-repeat: repeat-x;
   color: white;
   position: relative;
-  height: 100vh;
+  height: 110vh;
 }
 
 h3 {
@@ -215,6 +216,15 @@ h3 {
           justify-content: space-between;
 }
 
+@media (max-width: 860px) {
+  .houseGlory {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .firstColumn,
 .secondColumn,
 .thirdColumn {
@@ -227,6 +237,14 @@ h3 {
           flex-direction: column;
   width: calc(100% / 3);
   margin-right: 20px;
+}
+
+@media (max-width: 860px) {
+  .firstColumn,
+  .secondColumn,
+  .thirdColumn {
+    width: 100%;
+  }
 }
 
 .houseName {
@@ -380,7 +398,19 @@ header h1 {
 
 @media (max-width: 1366px) {
   .leftHalfHeader {
-    left: -100px;
+    left: -150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .leftHalfHeader {
+    left: -200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .leftHalfHeader {
+    left: -250px;
   }
 }
 
@@ -394,6 +424,18 @@ header h1 {
 @media (max-width: 1366px) {
   .rightHalfHeader {
     right: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rightHalfHeader {
+    right: -40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .rightHalfHeader {
+    right: -80px;
   }
 }
 

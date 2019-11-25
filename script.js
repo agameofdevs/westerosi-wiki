@@ -12,7 +12,7 @@ let founderID;
 app.checkForEmptyValues = () => {
     if (lordID == "") {
         $('.currentLordName').html(`<p>Unknown</p>`);
-    } else if (founderID == "") {
+    } else if (founderID == "" || founderID == null || founderID == undefined) {
         $('.founder').html(`<p>Unknown</p>`);
     }
 }
@@ -139,21 +139,18 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     houseInfo[0].titles.join(", ")
 
 
-    $('.houseName').html(`<h2>${houseInfo[0].name}</h2>`);
-    $('.region').html(`<p>${houseInfo[0].region}</p>`);
-    $('.emblem').html(`<h3>${houseInfo[0].coatOfArms}</h3>`);
-    $('.houseMotto').html(`<p>${houseInfo[0].words}</p>`);
-    $('.lordTitles').html(`<p>${houseInfo[0].titles.join(', ')}</p>`);
-    $('.founder').html(`<p>${founderInfo[0].name}</p>`);
-    $('.currentLordName').html(`<p>${lordInfo[0].name}</p>`);
-    $('.founded').html(`<p>${houseInfo[0].founded}</p>`);
+    $('.houseName').html(`${houseInfo[0].name}`);
+    $('.region').html(`${houseInfo[0].region}`);
+    $('.emblem').html(`${houseInfo[0].coatOfArms}`);
+    $('.houseMotto').html(`${houseInfo[0].words}`);
+    $('.lordTitles').html(`${houseInfo[0].titles.join(', ')}`);
+    $('.founder').html(`${founderInfo[0].name}`);
+    $('.currentLordName').html(`${lordInfo[0].name}`);
+    $('.founded').html(`${houseInfo[0].founded}`);
     $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem for the ${houseInfo[0].name}">`);
     $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord, ${lordInfo[0].name} from ${houseInfo[0].name}">`);
 
-    
     app.checkForEmptyValues();
-
-
 }
 
 // Start app

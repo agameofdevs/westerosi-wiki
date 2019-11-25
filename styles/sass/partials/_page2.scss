@@ -1,9 +1,10 @@
 main {
   background: url(../assets/page2Background3.jpg);
   background-size: cover;
+  background-repeat: repeat-x;
   color: white;
   position: relative;
-  height: 100vh;
+  height: 110vh;
 }
 
 h3 {
@@ -20,6 +21,9 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+    @include mqTablet{
+      flex-direction: column;
+    }
 }
 
 .firstColumn,
@@ -29,6 +33,9 @@ h3 {
   flex-direction: column;
   width: calc(100% / 3);
   margin-right: 20px;
+  @include mqTablet{
+    width: 100%;
+  }
 }
 
 .houseName {
