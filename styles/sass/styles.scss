@@ -3,20 +3,20 @@
 @import "partials/fonts";
 @import "partials/mediaQueries";
 
-.wrapper{
-    max-width: 1240px;
-    width: 80%;
-    margin: 0 auto;
+.wrapper {
+max-width: 1240px;
+width: 80%;
+margin: 0 auto;
 }
 
 html {
-    font-size: 62.5%;
+font-size: 62.5%;
 }
 
 img {
-    width:100%;
-    display: block;
-    border-radius: 10px;
+width: 100%;
+display: block;
+border-radius: 10px;
 }
 
 // Header Styling
@@ -26,78 +26,86 @@ background-color: black;
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center center;
+background-attachment: fixed;
 height: 100vh;
 position: relative;
 font-family: url(../assets/gameOfThrones.ttf);
-    h1 {
-        position: absolute;
-    }
+@include mqPhone{
+    background-size: cover;
+}
+h1 {
+    position: absolute;
+}
+}
 
-        .leftHalfHeader {
-            top:350px;
-            left:0;
-        }
-
-        .rightHalfHeader {
-            top:350px;
-            right:150px;
-            transform: rotate(-270deg);
-        }
-    
-
-
-    .sigil {
-        position: absolute;
-        animation-duration: 0.8s;
-    img {
-        height: 60px;
-        width: 50px;
-        transition: .35s ease-in-out;
+.leftHalfHeader {
+    top: 350px;
+    left: 0;
+    @include mqTablet{
+        // top: -100px;
+        left: -300px;
     }
 }
 
-.sigil img:hover {
-    height:60px;
-    width:50px;
-    transform: scale(1.7);
-}   
-
+.rightHalfHeader {
+    top: 350px;
+    right: 150px;
+    transform: rotate(-270deg);
 }
+
+
+header {
+.sigil {
+    position: absolute;
+    animation-duration: 0.8s;
+        img {
+            height: 60px;
+            width: 50px;
+            transition: 0.35s ease-in-out;
+            
+                &:hover{
+                    height: 60px;
+                        width: 50px;
+                        transform: scale(1.7);
+                        }
+            }
+        }
+    }
+
 // Sigil positioning for interactive map
-.starkSigil{
-    top: 25%;
-    right: 50%;
+.starkSigil {
+top: 25%;
+right: 50%;
 }
-.targaryanSigil{
-    top:50%;
-    right: 45%;
+.targaryanSigil {
+top: 50%;
+right: 45%;
 }
-.lannisterSigil{
-    top: 53%;
-    left: 42%;
+.lannisterSigil {
+top: 53%;
+left: 42%;
 }
-.greyjoySigil{
-    top: 38%;
-    left: 40%;
+.greyjoySigil {
+top: 38%;
+left: 40%;
 }
-.tullySigil{
-    top: 44%;
-    right: 50%;
+.tullySigil {
+top: 44%;
+right: 50%;
 }
-.baratheonSigil{
-    top: 62%;
-    right: 45%;
+.baratheonSigil {
+top: 62%;
+right: 45%;
 }
-.martellSigil{
-    top: 73%;
-    right: 48%;
+.martellSigil {
+top: 73%;
+right: 48%;
 }
-.arrynSigil{
-    top: 37%;
-    left: 51%;
+.arrynSigil {
+top: 37%;
+left: 51%;
 }
-.tyrellSigil{
-    top: 62%;
-    right: 53%;
+.tyrellSigil {
+top: 62%;
+right: 53%;
 }
-

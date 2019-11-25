@@ -28,7 +28,7 @@ app.collectInfo = function () {
         houseID = 378;
         lordID = 1303;
         founderID = "";
-        // $('.history').html('.targaryanHistory')
+        
         $('.history').html("");
         $('.targaryanHistory').show();
         $('.houseHistory').html('.targaryanHistory');
@@ -155,7 +155,7 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.founder').html(`<p>${founderInfo[0].name}</p>`);
     $('.currentLordName').html(`<p>${lordInfo[0].name}</p>`);
     $('.founded').html(`<p>${houseInfo[0].founded}</p>`);
-    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem">`);
+    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem for the ${houseInfo[0].name}>`);
     $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
 
     

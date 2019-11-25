@@ -306,9 +306,6 @@ h1 {
 
 h2, h3 {
   margin-bottom: 30px;
-}
-
-h2, h3 {
   text-align: center;
 }
 
@@ -339,37 +336,11 @@ p {
   font-weight: 800;
 }
 
-@media (max-width: 1366px) {
-  header .leftHalfHeader {
-    left: -100px;
-  }
-  header .rightHalfHeader {
-    right: 70px;
-  }
-}
-
-@media (max-width: 1185px) {
-  header .leftHalfHeader {
-    left: -160px;
-  }
-  header .rightHalfHeader {
-    right: 10px;
-  }
-}
-
-@media (max-width: 1050px) {
-  header .leftHalfHeader {
-    left: -210px;
-  }
-  header .rightHalfHeader {
-    right: -50px;
-  }
-  .houseGlory {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.houseGlory {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .wrapper {
@@ -394,21 +365,34 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
   font-family: url(../assets/gameOfThrones.ttf);
+}
+
+@media (max-width: 570px) {
+  header {
+    background-size: cover;
+  }
 }
 
 header h1 {
   position: absolute;
 }
 
-header .leftHalfHeader {
+.leftHalfHeader {
   top: 350px;
   left: 0;
 }
 
-header .rightHalfHeader {
+@media (max-width: 1366px) {
+  .leftHalfHeader {
+    left: -300px;
+  }
+}
+
+.rightHalfHeader {
   top: 350px;
   right: 150px;
   -webkit-transform: rotate(-270deg);
@@ -424,8 +408,8 @@ header .sigil {
 header .sigil img {
   height: 60px;
   width: 50px;
-  -webkit-transition: .35s ease-in-out;
-  transition: .35s ease-in-out;
+  -webkit-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
 }
 
 header .sigil img:hover {
