@@ -149,8 +149,8 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.founder').html(`${founderInfo[0].name}`);
     $('.currentLordName').html(`${lordInfo[0].name}`);
     $('.founded').html(`${houseInfo[0].founded}`);
-    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem for the ${houseInfo[0].name}">`);
-    $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord, ${lordInfo[0].name} from ${houseInfo[0].name}">`);
+    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="Image of house emblem for the ${houseInfo[0].name}">`);
+    $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="Image of current house lord, ${lordInfo[0].name} from ${houseInfo[0].name}">`);
 
     if (houseInfo[0].founded == "") {
         $('.founded').html('Unknown')
@@ -170,8 +170,11 @@ app.init = function () {
 //document ready
 $(function () {
     app.init();
-    $('header').show();
+    $('.siteInfo').show();
+    $('.sigilSection').hide()
+    // $('header').show();
     $('main').hide();
+    
 
     $('.sigil').on('click', function () {
         

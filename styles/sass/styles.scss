@@ -1,5 +1,6 @@
 @import "partials/setup";
 @import "partials/mediaQueries";
+@import "partials/siteInfo";
 @import "partials/page2";
 @import "partials/fonts";
 
@@ -20,7 +21,7 @@ border-radius: 10px;
 }
 
 // Header Styling
-header {
+.sigilSection {
 background-image: url(../assets/westerosMap.jpg);
 background-color: black;
 background-size: contain;
@@ -68,7 +69,7 @@ h1 {
 }
 
 
-header {
+.sigilSection {
 .sigil {
     position: absolute;
     animation-duration: 0.8s;

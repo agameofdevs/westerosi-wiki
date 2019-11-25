@@ -179,6 +179,37 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+.siteInfo {
+  background: url(../assets/dragonsBG.jpg);
+  background-size: cover;
+  background-repeat: repeat-x;
+  color: white;
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.siteInfo h2 {
+  margin: 30px 0;
+  font-size: 5rem;
+  color: #da2d2d;
+}
+
+.siteInfo p {
+  margin: 30px 0;
+  color: white;
+  padding: 0 60px;
+}
+
 main {
   background: url(../assets/page2Background3.jpg);
   background-size: cover;
@@ -371,7 +402,7 @@ img {
   border-radius: 10px;
 }
 
-header {
+.sigilSection {
   background-image: url(../assets/westerosMap.jpg);
   background-color: black;
   background-size: contain;
@@ -383,12 +414,12 @@ header {
 }
 
 @media (max-width: 670px) {
-  header {
+  .sigilSection {
     background-size: cover;
   }
 }
 
-header h1 {
+.sigilSection h1 {
   position: absolute;
 }
 
@@ -440,20 +471,20 @@ header h1 {
   }
 }
 
-header .sigil {
+.sigilSection .sigil {
   position: absolute;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
 }
 
-header .sigil img {
+.sigilSection .sigil img {
   height: 60px;
   width: 50px;
   -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
 }
 
-header .sigil img:hover {
+.sigilSection .sigil img:hover {
   height: 60px;
   width: 50px;
   -webkit-transform: scale(1.7);
