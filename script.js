@@ -4,15 +4,10 @@ app.URL = 'https://www.anapioficeandfire.com/api/houses/';
 app.Lord = 'https://www.anapioficeandfire.com/api/characters/'
 app.founder = 'https://www.anapioficeandfire.com/api/characters/'
 
-
-
 let houseID;
 let lordID;
 let founderID;
 // Collect user input
-
-
-
 
 app.checkForEmptyValues = () => {
     if (lordID == "") {
@@ -29,9 +24,8 @@ app.collectInfo = function () {
         lordID = 1303;
         founderID = "";
         
-        $('.history').html("");
+        $('.houseHistory').hide();
         $('.targaryanHistory').show();
-        $('.houseHistory').html('.targaryanHistory');
         app.getInfo();
     });
 
@@ -40,7 +34,7 @@ app.collectInfo = function () {
         lordID = "";
         founderID = 209;
         // $('.history').clear();
-        $('.history').show()
+        $('.houseHistory').hide();
         $('.starkHistory').show();
         app.getInfo();
     });
@@ -49,7 +43,7 @@ app.collectInfo = function () {
         houseID = 229;
         lordID = 238;
         founderID = 615;
-        $('.history').show()
+        $('.houseHistory').hide();
         $('.lannisterHistory').show();
         app.getInfo();
     });
@@ -58,7 +52,7 @@ app.collectInfo = function () {
         houseID = 7;
         lordID = 894;
         founderID = 144;
-        $('.history').show()
+        $('.houseHistory').hide();
         $('.arrynHistory').show();
         app.getInfo();
     });
@@ -67,7 +61,7 @@ app.collectInfo = function () {
         houseID = 395;
         lordID = "";
         founderID = "";
-        $('.history').show()
+        $('.houseHistory').hide();
         $('.tullyHistory').show();
         app.getInfo();
     });
@@ -76,7 +70,7 @@ app.collectInfo = function () {
         houseID = 169;
         lordID = 385;
         founderID = "";
-        $('.history').show()
+        $('.houseHistory').hide();
         $('.greyjoyHistory').show();
         app.getInfo();
     });
@@ -85,7 +79,7 @@ app.collectInfo = function () {
         houseID = 17;
         lordID = 1029;
         founderID = 797;
-        $('.history').show()
+        $('.houseHistory').hide();
         $('.baratheonHistory').show();
         app.getInfo();
     });
@@ -94,7 +88,7 @@ app.collectInfo = function () {
         houseID = 398;
         lordID = 691;
         founderID = 75;
-        $('.history').show()
+        $('.houseHistory').hide();
         $('.tyrellHistory').show();
         app.getInfo();
     });
@@ -103,7 +97,7 @@ app.collectInfo = function () {
         houseID = 285;
         lordID = 326;
         founderID = 1718;
-        $('.history').show()
+        $('.houseHistory').hide();
         $('.martellHistory').show();
         app.getInfo();
     });
@@ -141,11 +135,9 @@ app.getInfo = function () {
 app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     console.log(houseInfo, lordInfo, founderInfo)
 
-    // let emblemPath = "assets/emblem3"
 
     houseInfo[0].titles.join(", ")
 
-    // console.log(lordInfo[0].name);
 
     $('.houseName').html(`<h2>${houseInfo[0].name}</h2>`);
     $('.region').html(`<p>${houseInfo[0].region}</p>`);
@@ -155,14 +147,12 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.founder').html(`<p>${founderInfo[0].name}</p>`);
     $('.currentLordName').html(`<p>${lordInfo[0].name}</p>`);
     $('.founded').html(`<p>${houseInfo[0].founded}</p>`);
-    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem for the ${houseInfo[0].name}>`);
-    $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord">`);
+    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem for the ${houseInfo[0].name}">`);
+    $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord, ${lordInfo[0].name} from ${houseInfo[0].name}">`);
 
     
     app.checkForEmptyValues();
 
-    // console.log('house info', houseInfo);
-    // console.log('lord info', lordInfo);
 
 }
 
@@ -194,6 +184,5 @@ $(function () {
         }, 1000)
     })
 
-    $('.history').hide();
     $('.houseHistory').hide();
 });

@@ -336,13 +336,6 @@ p {
   font-weight: 800;
 }
 
-.houseGlory {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .wrapper {
   max-width: 1240px;
   width: 80%;
@@ -365,7 +358,6 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   height: 100vh;
   position: relative;
   font-family: url(../assets/gameOfThrones.ttf);
@@ -388,7 +380,7 @@ header h1 {
 
 @media (max-width: 1366px) {
   .leftHalfHeader {
-    left: -300px;
+    left: -100px;
   }
 }
 
@@ -397,6 +389,12 @@ header h1 {
   right: 150px;
   -webkit-transform: rotate(-270deg);
           transform: rotate(-270deg);
+}
+
+@media (max-width: 1366px) {
+  .rightHalfHeader {
+    right: 50px;
+  }
 }
 
 header .sigil {

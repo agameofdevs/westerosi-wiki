@@ -1,5 +1,5 @@
 
-@mixin mqTablet{
+@mixin mqLaptop{
     @media(max-width: 1366px){
         @content;
     }
@@ -11,8 +11,4 @@
     }
 }
 
-
-    .houseGlory {
-        flex-direction: column;
-    }
 
