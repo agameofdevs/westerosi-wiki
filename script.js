@@ -28,8 +28,10 @@ app.collectInfo = function () {
         houseID = 378;
         lordID = 1303;
         founderID = "";
-        $('.history').html('.targaryanHistory')
+        // $('.history').html('.targaryanHistory')
+        $('.history').html("");
         $('.targaryanHistory').show();
+        $('.houseHistory').html('.targaryanHistory');
         app.getInfo();
     });
 
@@ -37,6 +39,8 @@ app.collectInfo = function () {
         houseID = 362;
         lordID = "";
         founderID = 209;
+        // $('.history').clear();
+        $('.history').show()
         $('.starkHistory').show();
         app.getInfo();
     });
@@ -45,6 +49,7 @@ app.collectInfo = function () {
         houseID = 229;
         lordID = 238;
         founderID = 615;
+        $('.history').show()
         $('.lannisterHistory').show();
         app.getInfo();
     });
@@ -53,6 +58,7 @@ app.collectInfo = function () {
         houseID = 7;
         lordID = 894;
         founderID = 144;
+        $('.history').show()
         $('.arrynHistory').show();
         app.getInfo();
     });
@@ -61,6 +67,7 @@ app.collectInfo = function () {
         houseID = 395;
         lordID = "";
         founderID = "";
+        $('.history').show()
         $('.tullyHistory').show();
         app.getInfo();
     });
@@ -69,6 +76,7 @@ app.collectInfo = function () {
         houseID = 169;
         lordID = 385;
         founderID = "";
+        $('.history').show()
         $('.greyjoyHistory').show();
         app.getInfo();
     });
@@ -77,6 +85,7 @@ app.collectInfo = function () {
         houseID = 17;
         lordID = 1029;
         founderID = 797;
+        $('.history').show()
         $('.baratheonHistory').show();
         app.getInfo();
     });
@@ -85,6 +94,7 @@ app.collectInfo = function () {
         houseID = 398;
         lordID = 691;
         founderID = 75;
+        $('.history').show()
         $('.tyrellHistory').show();
         app.getInfo();
     });
@@ -93,6 +103,7 @@ app.collectInfo = function () {
         houseID = 285;
         lordID = 326;
         founderID = 1718;
+        $('.history').show()
         $('.martellHistory').show();
         app.getInfo();
     });
@@ -184,4 +195,5 @@ $(function () {
     })
 
     $('.history').hide();
+    $('.houseHistory').hide();
 });
