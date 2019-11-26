@@ -4,9 +4,9 @@ const app = {};
 
 
 // URLs for API Call
-app.URL = 'https://www.anapioficeandfire.com/api/houses/';
-app.lordURL = 'https://www.anapioficeandfire.com/api/characters/';
-app.founderURL = 'https://www.anapioficeandfire.com/api/characters/';
+app.url = 'https://www.anapioficeandfire.com/api/houses/';
+app.lordUrl = 'https://www.anapioficeandfire.com/api/characters/';
+app.founderUrl = 'https://www.anapioficeandfire.com/api/characters/';
 // URLs for API Call
 
 
@@ -119,18 +119,19 @@ app.collectInfo = function () {
 
 // Make AJAX request based on which sigil the user selected. Each sigil has its own unique values for houseID, lordID, and founderID
 app.getInfo = function () {
-    $.when($.ajax({
-        url: `${app.URL}${houseID}`,
-        method: 'GET',
-        dataType: 'json',
-    }),
+    $.when(
         $.ajax({
-            url: `${app.lordURL}${lordID}`,
+            url: `${app.url}${houseID}`,
             method: 'GET',
             dataType: 'json',
         }),
         $.ajax({
-            url: `${app.founderURL}${founderID}`,
+            url: `${app.lordUrl}${lordID}`,
+            method: 'GET',
+            dataType: 'json',
+        }),
+        $.ajax({
+            url: `${app.founderUrl}${founderID}`,
             method: 'GET',
             dataType: 'json',
         })

@@ -12,7 +12,7 @@
 <body>
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
     <header>
-        <section class="siteInfo">
+        <section class="siteInfo"> <!-- Welcome Screen -->
             <div class="infoContent wrapper">
                 <h2>Welcome to Westerosi Wiki!</h2>
                 <p>Westerosi Wiki is a website built by fans for fans (or noobs) alike!</p>
@@ -20,12 +20,12 @@
                 <p>Just click on one of the house Sigils displayed on the map to learn about the chosen house!</p>
                 <p>Credits for most of the house data goes to <a href="https://anapioficeandfire.com/"
                         class="apiLink">An API of Ice and Fire</a>.</p>
-            </div>
+            </div> <!-- Welcome Screen -->
 
             <button type="button" class="goToWiki" id="mainContent">Continue to Westerosi Wiki</button>
         </section>
 
-        <section class="sigilSection">
+        <section class="sigilSection"> <!--Sigil Section Begins-->
             <div class="wrapper">
                 <h1 class="leftHalfHeader">WESTEROSI</h1>
                 <h1 class="rightHalfHeader">WIKI</h1>
@@ -61,7 +61,7 @@
             <div tabindex='0' class="tyrellSigil sigil animated infinite pulse">
                 <img src="assets/houseTyrellSigil.png" alt="Sigil image of the house Tyrell showing a golden rose">
             </div>
-        </section>
+        </section> <!--Sigil Section End-->
     </header>
 
     <main>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="historyContainer">
                         <h3>History</h3>
-                        <div class="history"> <!-- History of each house -->    
+                        <div class="history"> <!-- History Of Each House Start-->    
                             <p class="starkHistory houseHistory">
                                 House Stark of Winterfell is one of the Great Houses of Westeros and the principal noble
                                 house of the north. In days of old they ruled as Kings of Winter, but since Aegon's
@@ -173,7 +173,7 @@
                                 Durrandon. The Baratheon sigil is a crowned black stag on a field of gold.
                                 <a href="https://awoiaf.westeros.org/index.php/House_Baratheon">Read More...</a>
                             </p>    
-                        </div> <!-- History of each house -->
+                        </div> <!-- History of Each House End -->
                     </div>
                     <div class="founderContainer">
                         <h3>Founder</h3>
@@ -186,7 +186,7 @@
                         <h3>House Motto</h3>
                         <p class="houseMotto"></p>
                     </div>
-                    <div class="emblem">
+                    <div class="emblem"> <!-- Emblem images will be appended here-->
                     </div>
                     <div class="regionContainer">
                         <h3>Region</h3>
@@ -199,7 +199,7 @@
                         <h3>Current Lord</h3>
                         <p class="currentLordName"></p>
                     </div>
-                    <div class="currentLordImage">
+                    <div class="currentLordImage"> <!-- Current lord images will be appended here -->
                     </div>
                     <div class="lordTitlesContainer">
                         <h3>Lord Title</h3>
@@ -213,6 +213,6 @@
         © Reem Hamoui & Vipin Kirthane 2019 Juno College
     </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script> <!-- jQuery File -->
-    <script src="script.js"></script> <!-- Javascript File -->
+    <script src="scripts/script.js"></script> <!-- Javascript File -->
 </body>
 </html>
