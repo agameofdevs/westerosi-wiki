@@ -497,7 +497,7 @@ img {
   background-position: center center;
   height: 100vh;
   position: relative;
-  font-family: url(../assets/fonts/gameOfThrones.ttf);
+  font-family: url(../assets/gameOfThrones.ttf);
 }
 
 @media (max-width: 670px) {
