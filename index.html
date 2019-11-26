@@ -10,10 +10,8 @@
     <title>Westerosi Wiki</title>
 </head>
 <body>
-    <!-- Skip Link  -->
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
     <header>
-        <!-- Welcome Screen Start -->
         <section class="siteInfo">
             <div class="infoContent wrapper">
                 <h2>
@@ -30,22 +28,15 @@
                     Just click on one of the house Sigils displayed on the map to learn about the chosen house!
                 </p>
             </div>
-            ​
             <button type="button" class="goToWiki" id="mainContent">
                 Continue to Westerosi Wiki
             </button>
         </section>
-        <!-- Welcome Screen End -->
-        ​
-        ​
         <section class="sigilSection">
-            <!-- Interactive map will be displayed here  -->
             <div class="wrapper">
                 <h1 class="leftHalfHeader">WESTEROSI</h1>
                 <h1 class="rightHalfHeader">WIKI</h1>
             </div>
-            ​
-            <!-- House sigils Start -->
             <div class="starkSigil sigil animated infinite pulse tabindex='0' ">
                 <img src="assets/houseStarkSigil.png" alt="Sigil image of the House Stark showing head of a wolf">
             </div>
@@ -76,19 +67,12 @@
             <div tabindex='0' class="tyrellSigil sigil animated infinite pulse">
                 <img src="assets/houseTyrellSigil.png" alt="Sigil image of the house Tyrell showing a golden rose">
             </div>
-            <!-- House Sigils End -->
         </section>
     </header>
-    ​
-    ​
     <main>
-        <!-- Arrow for navigating to top of the page -->
         <div class="arrowButton animated infinite pulse">
             <img src="assets/arrow.png" alt="">
         </div>
-        <!-- Arrow for navigating to top of the page -->
-        ​
-
         <div class="houseContainer wrapper">    ​
             <h2 class="houseName"></h2>
             <div class="houseGlory">   ​
@@ -99,8 +83,6 @@
                     </div>
                     <div class="historyContainer">
                         <h3>History</h3>
-                        
-                        <!-- ​History of the houses start-->
                         <div class="history">    
                             <p class="starkHistory houseHistory">
                                 House Stark of Winterfell is one of the Great Houses of Westeros and the principal noble
@@ -197,53 +179,41 @@
                                 <a href="https://awoiaf.westeros.org/index.php/House_Baratheon">Read More...</a>
                             </p>
                         </div>
-                        <!-- ​History of the houses End-->
                     </div>
                     <div class="founderContainer">
                         <h3>Founder</h3>
                         <p class="founder"></p>
                     </div>
                 </section>
-                ​
                 <section class="secondColumn">
                     <div class="familyMottoContainer">
                         <h3>House Motto</h3>
                         <p class="houseMotto"></p>
                     </div>
                     <div class="emblem">
-                        <!-- ​Images of emblems will appear here -->
                     </div>
                     <div class="regionContainer">
                         <h3>Region</h3>
                         <p class="region"></p>
                     </div>
                 </section>
-                ​
                 <section class="thirdColumn">
                     <div class="currentLordContainer">
                         <h3>Current Lord</h3>
                         <p class="currentLordName"></p>
                     </div>
-                    ​
                     <div class="currentLordImage">
-                        <!-- Images of current lord will appear here -->
                     </div>
-                    ​
                     <div class="lordTitlesContainer">
                         <h3>Lord Title</h3>
                         <p class="lordTitles"></p>
                     </div>
                 </section>
             </div>
-            ​
         </div> <!-- houseContainer ends -->
     </main>
-
-    <!-- jQuery & JavaScript -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'
         integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
     <script src="script.js"></script>
-    <!-- jQuery & JavaScript -->
 </body>
-
 </html>
