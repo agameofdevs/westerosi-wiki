@@ -1,3 +1,8 @@
+$orangeColor: #c72c41;
+$orangeColor2: #df8931;
+$blackColor: #262834;
+$blackColor2: #09260C;
+
 @import "partials/setup";
 @import "partials/fonts";
 @import "partials/mediaQueries";
@@ -14,7 +19,6 @@ html {
     font-size: 62.5%;
     display: inline-block;
 }
-
 
 img {
     width: 100%;
@@ -71,7 +75,7 @@ img {
         font-size:6rem;
         left:-80px;
         color:black;
-        text-shadow:2px 2px #df8931;
+        text-shadow:2px 2px $orangeColor2;
     }
     @include mqPhoneMed{
         left: -150px;
@@ -113,7 +117,7 @@ img {
      @include mqTabletSmall {
         font-size:6rem;
         color:black;
-        text-shadow: 5px 5px #df8931;
+        text-shadow: 5px 5px $orangeColor2;
         right:50px;
     }
     @include mqPhoneMed{
