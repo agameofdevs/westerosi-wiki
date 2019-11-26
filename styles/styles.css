@@ -532,7 +532,14 @@ img {
 
 @media (max-width: 500px) {
   .leftHalfHeader {
-    left: -180px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: 20px;
+    right: 0px;
+    top: 50px;
+    color: #c72c41;
+    text-shadow: 2px 2px darkred;
+    font-size: 5rem;
   }
 }
 
@@ -578,7 +585,13 @@ img {
 
 @media (max-width: 500px) {
   .rightHalfHeader {
-    right: -60px;
+    right: 120px;
+    top: 130px;
+    color: #c72c41;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    font-size: 5rem;
+    text-shadow: 2px 2px darkred;
   }
 }
 
@@ -602,6 +615,13 @@ img {
           transform: scale(1.7);
 }
 
+@media (max-width: 670px) {
+  .sigilSection .sigil img {
+    height: 45px;
+    width: 35px;
+  }
+}
+
 .starkSigil {
   top: 25%;
   right: 50%;
@@ -612,14 +632,117 @@ img {
   right: 45%;
 }
 
+@media (max-width: 1000px) {
+  .targaryanSigil {
+    right: 43%;
+  }
+}
+
+@media (max-width: 860px) {
+  .targaryanSigil {
+    right: 41%;
+  }
+}
+
+@media (max-width: 670px) {
+  .targaryanSigil {
+    right: 39%;
+  }
+}
+
+@media (max-width: 500px) {
+  .targaryanSigil {
+    right: 35%;
+  }
+}
+
+@media (max-width: 400px) {
+  .targaryanSigil {
+    right: 30%;
+  }
+}
+
 .lannisterSigil {
   top: 53%;
   left: 42%;
 }
 
+@media (max-width: 1200px) {
+  .lannisterSigil {
+    left: 40%;
+  }
+}
+
+@media (max-width: 930px) {
+  .lannisterSigil {
+    left: 37%;
+  }
+}
+
+@media (max-width: 860px) {
+  .lannisterSigil {
+    left: 34%;
+  }
+}
+
+@media (max-width: 640px) {
+  .lannisterSigil {
+    left: 32%;
+  }
+}
+
+@media (max-width: 500px) {
+  .lannisterSigil {
+    left: 25%;
+  }
+}
+
 .greyjoySigil {
   top: 38%;
   left: 40%;
+}
+
+@media (max-width: 1200px) {
+  .greyjoySigil {
+    left: 38%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .greyjoySigil {
+    left: 36%;
+  }
+}
+
+@media (max-width: 860px) {
+  .greyjoySigil {
+    left: 34%;
+  }
+}
+
+@media (max-width: 670px) {
+  .greyjoySigil {
+    left: 33%;
+    top: 40%;
+  }
+}
+
+@media (max-width: 640px) {
+  .greyjoySigil {
+    left: 28%;
+  }
+}
+
+@media (max-width: 500px) {
+  .greyjoySigil {
+    left: 25%;
+  }
+}
+
+@media (max-width: 400px) {
+  .greyjoySigil {
+    left: 20%;
+  }
 }
 
 .tullySigil {
@@ -632,6 +755,30 @@ img {
   right: 45%;
 }
 
+@media (max-width: 1000px) {
+  .baratheonSigil {
+    right: 42%;
+  }
+}
+
+@media (max-width: 670px) {
+  .baratheonSigil {
+    right: 39%;
+  }
+}
+
+@media (max-width: 500px) {
+  .baratheonSigil {
+    right: 36%;
+  }
+}
+
+@media (max-width: 400px) {
+  .baratheonSigil {
+    right: 31%;
+  }
+}
+
 .martellSigil {
   top: 73%;
   right: 48%;
@@ -642,7 +789,31 @@ img {
   left: 51%;
 }
 
+@media (max-width: 640px) {
+  .arrynSigil {
+    left: 55%;
+  }
+}
+
 .tyrellSigil {
   top: 62%;
   right: 53%;
+}
+
+@media (max-width: 930px) {
+  .tyrellSigil {
+    right: 56%;
+  }
+}
+
+@media (max-width: 860px) {
+  .tyrellSigil {
+    right: 59%;
+  }
+}
+
+@media (max-width: 640px) {
+  .tyrellSigil {
+    right: 62%;
+  }
 }

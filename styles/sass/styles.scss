@@ -42,7 +42,6 @@ background-color: black;
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center center;
-// background-attachment: fixed;
 height: 100vh;
 position: relative;
 font-family: url(../assets/gameOfThrones.ttf);
@@ -76,7 +75,13 @@ h1 {
         left: -150px;
     }
     @include mqPhoneSmall{
-        left: -180px;
+        transform: rotate(0deg);
+        left: 20px;
+        right: 0px;
+        top: 50px;
+        color: #c72c41;
+        text-shadow: 2px 2px darkred;
+        font-size: 5rem;
     }
 }
 
@@ -103,7 +108,12 @@ h1 {
         right: -40px;
     }
     @include mqPhoneSmall{
-        right:-60px;
+        right: 120px;
+        top: 130px;
+        color: #c72c41;
+        transform: rotate(0deg);
+        font-size: 5rem;
+        text-shadow: 2px 2px darkred;
     }
 }
 
@@ -122,6 +132,10 @@ h1 {
                         width: 50px;
                         transform: scale(1.7);
                         }
+                        @include mqPhoneBig{
+                            height: 45px;
+                            width: 35px;
+                        }
             }
         }
     }
@@ -134,14 +148,70 @@ right: 50%;
 .targaryanSigil {
 top: 50%;
 right: 45%;
+@include mqTabletBig{
+    right: 43%;
+}
+@include mqTabletSmall{
+    right: 41%;
+}
+@include mqPhoneBig{
+    right: 39%;
+}
+@include mqPhoneSmall{
+    right: 35%;
+}
+@include mqPhoneTiny{
+        right: 30%;
+    }
+
 }
 .lannisterSigil {
 top: 53%;
 left: 42%;
+@include mqLaptopSmall{
+    left: 40%;
 }
+@include mqTabletMed{
+    left: 37%;
+}
+@include mqTabletSmall{
+    left: 34%;
+}
+@include mqPhoneMed{
+    left: 32%;
+}
+@include mqPhoneSmall{
+    left: 25%;
+}
+}
+
+
 .greyjoySigil {
 top: 38%;
 left: 40%;
+@include mqLaptopSmall {
+        left:38%;
+    }
+    @include mqTabletBig {
+        left:36%;
+    }
+    @include mqTabletSmall {
+        left: 34%;
+    }
+    @include mqPhoneBig {
+        left:33%;
+        top:40%;
+    }
+    @include mqPhoneMed {
+        left:28%;
+    }
+    @include mqPhoneSmall {
+        left:25%;
+    }
+    @include mqPhoneTiny{
+        left: 20%;
+    }
+    
 }
 .tullySigil {
 top: 44%;
@@ -150,6 +220,18 @@ right: 50%;
 .baratheonSigil {
 top: 62%;
 right: 45%;
+@include mqTabletBig{
+    right: 42%;
+}
+@include mqPhoneBig{
+    right: 39%;
+}
+@include mqPhoneSmall{
+    right: 36%;
+}
+@include mqPhoneTiny{
+    right: 31%;
+}
 }
 .martellSigil {
 top: 73%;
@@ -158,8 +240,20 @@ right: 48%;
 .arrynSigil {
 top: 37%;
 left: 51%;
+@include mqPhoneMed{
+    left: 55%;
+}
 }
 .tyrellSigil {
 top: 62%;
 right: 53%;
+@include mqTabletMed{
+    right: 56%;
+}
+@include mqTabletSmall{
+    right: 59%;
+}
+@include mqPhoneMed{
+    right: 62%;
+}
 }
