@@ -6,10 +6,6 @@ main {
   position: relative;
 }
 
-h3 {
-  font-size: 1rem;
-}
-
 .houseContainer {
   display: flex;
   flex-direction: column;
@@ -84,6 +80,10 @@ h3 {
   top: 50%;
   img {
     transform: rotate(-45deg);
+  }
+  @include mqTabletBig {
+    height:40px;
+    width:40px;
   }
 }
 

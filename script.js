@@ -1,14 +1,15 @@
 // Create app namespace to hold all methods
 const app = {};
 app.URL = 'https://www.anapioficeandfire.com/api/houses/';
-app.Lord = 'https://www.anapioficeandfire.com/api/characters/'
-app.founder = 'https://www.anapioficeandfire.com/api/characters/'
+app.lordURL = 'https://www.anapioficeandfire.com/api/characters/'
+app.founderURL = 'https://www.anapioficeandfire.com/api/characters/'
 
 let houseID;
 let lordID;
 let founderID;
 // Collect user input
 
+// Error handling function in case we get null values for lordID & founderId
 app.checkForEmptyValues = () => {
     if (lordID == "") {
         $('.currentLordName').html('Unknown');
@@ -19,6 +20,7 @@ app.checkForEmptyValues = () => {
     }
 }
 
+// Functions that would tell the AJAX calls which house information we’d like to see based on what sigil we clicked. Here, we are giving each house sigil its own HouseID, lordID, and founderID.
 app.collectInfo = function () {
 
     $('.targaryanSigil').on('click keypress', function () {
@@ -35,7 +37,6 @@ app.collectInfo = function () {
         houseID = 362;
         lordID = "";
         founderID = 209;
-        // $('.history').clear();
         $('.houseHistory').hide();
         $('.starkHistory').show();
         app.getInfo();
@@ -105,10 +106,8 @@ app.collectInfo = function () {
     });
 }
 
-// Make AJAX request with user inputted data
-//houseID is a parameter that will change based on the div clicked on the interactive map. The div will trigger the ID of the house found in the API. 
-//Once triggered, and will get us the information we want to append to our website. 
 
+// Make AJAX request based on which sigil the user selected. Each sigil has its own unique values for houseID, lordID, and founderID
 app.getInfo = function () {
     $.when($.ajax({
         url: `${app.URL}${houseID}`,
@@ -116,12 +115,12 @@ app.getInfo = function () {
         dataType: 'json',
     }),
         $.ajax({
-            url: `${app.Lord}${lordID}`,
+            url: `${app.lordURL}${lordID}`,
             method: 'GET',
             dataType: 'json',
         }),
         $.ajax({
-            url: `${app.founder}${founderID}`,
+            url: `${app.founderURL}${founderID}`,
             method: 'GET',
             dataType: 'json',
         })
@@ -132,8 +131,9 @@ app.getInfo = function () {
             // console.log(er1,er2,er3);
         });
 }
+
 // Display data on the page
-//we will be displaying information gathered from the API data, we will also be appending them to the page
+//Here, we will be displaying information gathered from the API data, we will also be appending them to the page
 app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     console.log(houseInfo, lordInfo, founderInfo)
 

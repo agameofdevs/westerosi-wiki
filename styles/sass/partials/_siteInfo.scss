@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-around;
 @include mqPhoneSmall{
-  height: auto;
+  height: 100vh;
 }
 }
 
