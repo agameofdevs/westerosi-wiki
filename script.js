@@ -182,6 +182,7 @@ $(function () {
     $('.siteInfo').show();
     $('.sigilSection').hide();
     $('main').hide();
+    $('footer').hide();
     
     $('.skipLink').on('click', function(){
         $('.sigilSection').show();
@@ -201,6 +202,7 @@ $(function () {
 
     $('.sigil').on('click keypress', function () {
         $('main').show();
+        $('footer').show();
         $('html, body').animate({
             scrollTop: $('main').offset().top
         }, 1000)
