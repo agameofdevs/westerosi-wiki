@@ -443,6 +443,9 @@ main {
   .arrowButton {
     height: 40px;
     width: 40px;
+    z-index: 20;
+    bottom: 40px;
+    top: auto;
   }
 }
 
@@ -543,7 +546,7 @@ img {
 
 @media (max-width: 500px) {
   .leftHalfHeader {
-    font-size: 4rem;
+    font-size: 3.5rem;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     left: 20px;
@@ -554,6 +557,13 @@ img {
     text-shadow: 2px 2px black;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .leftHalfHeader {
+    right: 0;
+    left: 2%;
   }
 }
 
@@ -599,7 +609,7 @@ img {
 
 @media (max-width: 500px) {
   .rightHalfHeader {
-    font-size: 4rem;
+    font-size: 3.5rem;
     right: 120px;
     top: 130px;
     color: #f45905;
