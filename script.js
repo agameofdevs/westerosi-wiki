@@ -13,7 +13,7 @@ app.checkForEmptyValues = () => {
     if (lordID == "") {
         $('.currentLordName').html('Unknown');
     }
-    
+
     if (founderID == "") {
         $('.founder').html('Unknown');
     }
@@ -25,7 +25,7 @@ app.collectInfo = function () {
         houseID = 378;
         lordID = 1303;
         founderID = "";
-        
+
         $('.houseHistory').hide();
         $('.targaryanHistory').show();
         app.getInfo();
@@ -137,9 +137,7 @@ app.getInfo = function () {
 app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     console.log(houseInfo, lordInfo, founderInfo)
 
-
     houseInfo[0].titles.join(", ")
-
 
     $('.houseName').html(`${houseInfo[0].name}`);
     $('.region').html(`${houseInfo[0].region}`);
@@ -149,8 +147,8 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
     $('.founder').html(`${founderInfo[0].name}`);
     $('.currentLordName').html(`${lordInfo[0].name}`);
     $('.founded').html(`${houseInfo[0].founded}`);
-    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="image of house emblem for the ${houseInfo[0].name}">`);
-    $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="image of current house lord, ${lordInfo[0].name} from ${houseInfo[0].name}">`);
+    $('.emblem').html(`<img class="emblemImage animated flipInY" src="assets/emblem${houseID}.jpg" alt="Image of house emblem for the ${houseInfo[0].name}">`);
+    $('.currentLordImage').html(`<img class="lordImage animated flipInY" src="assets/lord${houseID}.jpg" alt="Image of current house lord, ${lordInfo[0].name} from ${houseInfo[0].name}">`);
 
     if (houseInfo[0].founded == "") {
         $('.founded').html('Unknown')
@@ -170,11 +168,20 @@ app.init = function () {
 //document ready
 $(function () {
     app.init();
-    $('header').show();
+    $('.siteInfo').show();
+    $('.sigilSection').hide()
     $('main').hide();
 
+    $('.goToWiki').on('click', function () {
+        $('.sigilSection').show();
+        $('html, body').animate({
+            scrollTop: $('.sigilSection').offset().top
+        })
+        $('.siteInfo').fadeOut();
+    })
+
     $('.sigil').on('click', function () {
-        
+
         $('main').show();
         $('html, body').animate({
             scrollTop: $('main').offset().top

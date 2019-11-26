@@ -1,37 +1,47 @@
-
-@mixin mqLaptop{
+@mixin mqLaptopBig{
     @media(max-width: 1366px){
         @content;
     }
 }
 
-@mixin mqTablet{
-    @media(max-width: 860px){
-        @content;
-    }
-}
-
-@mixin mqPhone{
-    @media(max-width: 670px){
-        @content;
-    }
-}
-
-// Vipin's Edits
-@mixin mqLaptop2 {
+@mixin mqLaptopSmall {
     @media (max-width: 1200px) {
         @content;
     }
 }
-@mixin mqTablet2 {
+
+@mixin mqTabletBig {
     @media (max-width: 1000px) {
         @content;
     }
 }
-@mixin mqPhone2 {
+
+@mixin mqTableMed {
     @media (max-width:930px) {
         @content;
     }
 }
 
+@mixin mqTabletSmall{
+    @media(max-width: 860px){
+        @content;
+    }
+}
 
+@mixin mqPhoneBig{
+    @media(max-width: 670px){
+        @content;
+    }
+}
+
+@mixin mqPhoneMed {
+    @media (max-width:640px) {
+        @content;
+    }
+}
+
+@mixin mqPhoneSmall {
+    @media (max-width:500px) {
+        @content;
+    }
+}

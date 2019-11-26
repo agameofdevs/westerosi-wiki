@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+​
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Uncial+Antiqua|Cinzel+Decorative:400,700,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Uncial+Antiqua|Cinzel+Decorative:400,700,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Westerosi Wiki</title>
 </head>
+​
 
 <body>
     <header>
-        <!-- Interactive map will be displayed here  -->
-        <div class="wrapper">
-            <h1 class="leftHalfHeader">WESTEROSI</h1>
-            <h1 class="rightHalfHeader">WIKI</h1>
-        </div>
+        <section class="siteInfo">
+            <div class="infoContent wrapper">
+                ​
 
-        <!-- House sigils-->
-        <div class="starkSigil sigil animated infinite pulse">
-            <img src="assets/houseStarkSigil.png" alt="Sigil image of the House Stark showing head of a wolf">
-        </div>
-        <div class="targaryanSigil sigil animated infinite pulse">
-            <img src="assets/houseTargaryenSigil.png"
-                alt="Sigil image of the house Targaryan showing a three headed dragon">
-        </div>
-        <div class="lannisterSigil sigil animated infinite pulse">
-            <img src="assets/houseLannisterSigil.png" alt="Sigil image of the house Lannister showing a lion">
-        </div>
-        <div class="greyjoySigil sigil animated infinite pulse">
-            <img src="assets/houseGreyjoySigil.png"
-                alt="Sigil image of the house Greyjoy showing an upside down octopus">
-        </div>
-        <div class="tullySigil sigil animated infinite pulse">
-            <img src="assets/houseTullySigil.png" alt="Sigil image of the house Tully showing a fish">
-        </div>
-        <div class="baratheonSigil sigil animated infinite pulse">
-            <img src="assets/houseBaratheonSigil.png" alt="Sigil image of the house Baratheon showing a deer">
-        </div>
-        <div class="martellSigil sigil animated infinite pulse">
-            <img src="assets/houseMartellSigil.png"
-                alt="Sigil image of the house Martell showing a spear going through the sun">
-        </div>
-        <div class="arrynSigil sigil animated infinite pulse">
-            <img src="assets/houseArrynSigil.png" alt="Sigil image of the house Aryrn showing a falcon">
-        </div>
-        <div class="tyrellSigil sigil animated infinite pulse">
-            <img src="assets/houseTyrellSigil.png" alt="Sigil image of the house Tyrell showing a golden rose">
-        </div>
+                <h2>
+                    Welcome to Westerosi Wiki!
+                </h2>
+                <p>
+                    Westerosi Wiki is a website built by fans for fans (or noobs) alike!
+                </p>
+                <p>
+                    The website showcases overhead information about the 9 great houses of George RR Martin's continent
+                    that lays in the far west of the known world, Westeros.
+                </p>
+                <p>
+                    Just click on one of the house Sigils displayed to learn about the chosen house!
+                </p>
+            </div>
+            ​
+            <button type="button" class="goToWiki">
+                Continue to Westerosi Wiki
+            </button>
+        </section>
+        ​
+        ​
+        <section class="sigilSection">
+            <!-- Interactive map will be displayed here  -->
+            <div class="wrapper">
+                <h1 class="leftHalfHeader">WESTEROSI</h1>
+                <h1 class="rightHalfHeader">WIKI</h1>
+            </div>
+            ​
+            <!-- House sigils-->
+            <div class="starkSigil sigil animated infinite pulse">
+                <img src="assets/houseStarkSigil.png" alt="Sigil image of the House Stark showing head of a wolf">
+            </div>
+            <div class="targaryanSigil sigil animated infinite pulse">
+                <img src="assets/houseTargaryenSigil.png"
+                    alt="Sigil image of the house Targaryan showing a three headed dragon">
+            </div>
+            <div class="lannisterSigil sigil animated infinite pulse">
+                <img src="assets/houseLannisterSigil.png" alt="Sigil image of the house Lannister showing a lion">
+            </div>
+            <div class="greyjoySigil sigil animated infinite pulse">
+                <img src="assets/houseGreyjoySigil.png"
+                    alt="Sigil image of the house Greyjoy showing an upside down octopus">
+            </div>
+            <div class="tullySigil sigil animated infinite pulse">
+                <img src="assets/houseTullySigil.png" alt="Sigil image of the house Tully showing a fish">
+            </div>
+            <div class="baratheonSigil sigil animated infinite pulse">
+                <img src="assets/houseBaratheonSigil.png" alt="Sigil image of the house Baratheon showing a deer">
+            </div>
+            <div class="martellSigil sigil animated infinite pulse">
+                <img src="assets/houseMartellSigil.png"
+                    alt="Sigil image of the house Martell showing a spear going through the sun">
+            </div>
+            <div class="arrynSigil sigil animated infinite pulse">
+                <img src="assets/houseArrynSigil.png" alt="Sigil image of the house Aryrn showing a falcon">
+            </div>
+            <div class="tyrellSigil sigil animated infinite pulse">
+                <img src="assets/houseTyrellSigil.png" alt="Sigil image of the house Tyrell showing a golden rose">
+            </div>
+        </section>
     </header>
-
-
+    ​
+    ​
     <main>
         <div class="arrowButton animated infinite pulse">
             <img src="assets/arrow.png" alt="">
         </div>
-
+        ​
         <div class="houseContainer wrapper">
-
+            ​
             <h2 class="houseName"></h2>
             <div class="houseGlory">
-
+                ​
                 <section class="firstColumn">
                     <div class="foundedContainer">
                         <h3>Founded</h3>
@@ -72,7 +103,7 @@
                     <div class="historyContainer">
                         <h3>History</h3>
                         <div class="history">
-
+                            ​
                             <p class="starkHistory houseHistory">
                                 House Stark of Winterfell is one of the Great Houses of Westeros and the principal noble
                                 house of the north. In days of old they ruled as Kings of Winter, but since Aegon's
@@ -81,7 +112,7 @@
                                 Winterfell, is an ancient castle renowned for its strength. <a
                                     href="https://awoiaf.westeros.org/index.php/House_Stark">Read More...</a>
                             </p>
-
+                            ​
                             <p class="lannisterHistory houseHistory">
                                 House Lannister of Casterly Rock is one of the Great Houses of Seven Kingdoms, and the
                                 principal house of the westerlands. Their seat is Casterly Rock, though another branch
@@ -92,7 +123,7 @@
                                 Their gold mines have made the Lannisters the wealthiest of the Great Houses.
                                 <a href="https://awoiaf.westeros.org/index.php/House_Lannister">Read More...</a>
                             </p>
-
+                            ​
                             <p class="targaryanHistory houseHistory">
                                 House Targaryen of Dragonstone is a noble family of Valyrian descent who once ruled the
                                 Seven Kingdoms of Westeros. The Targaryen sigil is a three-headed dragon breathing
@@ -101,7 +132,7 @@
                                 first royal house of the Seven Kingdoms, as House Targaryen of King's Landing.
                                 <a href="https://awoiaf.westeros.org/index.php/House_Targaryen">Read More...</a>
                             </p>
-
+                            ​
                             <p class="arrynHistory houseHistory">
                                 House Arryn of the Eyrie is one of the Great Houses of Westeros, and is the principal
                                 noble
@@ -110,7 +141,7 @@
                                 Gates of the Moon, which was once their main seat.
                                 <a href="https://awoiaf.westeros.org/index.php/House_Arryn">Read More...</a>
                             </p>
-
+                            ​
                             <p class="greyjoyHistory houseHistory">
                                 House Greyjoy of Pyke is one of the Great Houses of Westeros. It rules over the Iron
                                 Islands, a harsh and bleak collection of forbidding islands off the west coast of
@@ -123,7 +154,7 @@
                                 to be attractive and well-built, with black hair.
                                 <a href="https://awoiaf.westeros.org/index.php/House_Greyjoy">Read More...</a>
                             </p>
-
+                            ​
                             <p class="tullyHistory houseHistory">
                                 House Tully of Riverrun is one of the Great Houses of the Seven Kingdoms. Lord Hoster
                                 Tully,
@@ -133,7 +164,7 @@
                                 their house words are "Family, Duty, Honor."
                                 <a href="https://awoiaf.westeros.org/index.php/House_Tully">Read More...</a>
                             </p>
-
+                            ​
                             <p class="tyrellHistory houseHistory">
                                 House Tyrell of Highgarden is one of the Great Houses of the Seven Kingdoms, being Lords
                                 Paramount of the Mander and the liege lords of the Reach. A large, wealthy house, its
@@ -147,7 +178,7 @@
                                 the royal fleet of King's Landing.
                                 <a href="https://awoiaf.westeros.org/index.php/House_Tyrell">Read More...</a>
                             </p>
-
+                            ​
                             <p class="martellHistory houseHistory">
                                 House Nymeros Martell of Sunspear, usually simply called House Martell, is one of the
                                 Great
@@ -157,7 +188,7 @@
                                 Nymeria around 700 BC. Prince of Dorne rules Dorne from Sunspear in southeastern Dorne.
                                 <a href="https://awoiaf.westeros.org/index.php/House_Martell">Read More...</a>
                             </p>
-
+                            ​
                             <p class="baratheonHistory houseHistory">
                                 House Baratheon of Storm's End is one of the Great Houses of Westeros, and is the
                                 principal
@@ -174,46 +205,47 @@
                         <p class="founder"></p>
                     </div>
                 </section>
-
+                ​
                 <section class="secondColumn">
                     <div class="familyMottoContainer">
                         <h3>House Motto</h3>
                         <p class="houseMotto"></p>
                     </div>
                     <div class="emblem">
-
+                        ​
                     </div>
                     <div class="regionContainer">
                         <h3>Region</h3>
                         <p class="region"></p>
                     </div>
                 </section>
-
+                ​
                 <section class="thirdColumn">
                     <div class="currentLordContainer">
                         <h3>Current Lord</h3>
                         <p class="currentLordName"></p>
                     </div>
-
+                    ​
                     <div class="currentLordImage">
                         <!-- Images of current lord will appear here -->
                     </div>
-
+                    ​
                     <div class="lordTitlesContainer">
                         <h3>Lord Title</h3>
                         <p class="lordTitles"></p>
                     </div>
                 </section>
             </div>
-
-
+            ​
+            ​
         </div> <!-- houseContainer ends -->
     </main>
 </body>
 <script src='https://code.jquery.com/jquery-3.2.1.min.js'
     integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
 <script src="script.js"></script>
+
 </html>
-
-
+​
+​
 <!-- Make sure to use double or single quotes everywhere -->

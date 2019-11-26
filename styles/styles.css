@@ -179,6 +179,57 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+.siteInfo {
+  background-image: url(../assets/dragonsBG.jpg);
+  background-size: cover;
+  background-repeat: repeat-x;
+  color: white;
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.siteInfo h2 {
+  margin: 30px 0;
+  font-size: 5rem;
+  color: #c72c41;
+}
+
+.siteInfo p {
+  margin: 30px 0;
+  color: white;
+  padding: 0 60px;
+  font-size: 2.6rem;
+}
+
+.siteInfo button {
+  width: 30%;
+  padding: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: transparent;
+  color: #c72c41;
+  font-size: 2.2rem;
+  border: 2px solid white;
+}
+
+.siteInfo button:hover {
+  background-color: #c72c41;
+  color: #262834;
+  border: #262834;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 main {
   background: url(../assets/page2Background3.jpg);
   background-size: cover;
@@ -415,6 +466,27 @@ header h1 {
   }
 }
 
+@media (max-width: 860px) {
+  .leftHalfHeader {
+    font-size: 6rem;
+    left: -80px;
+    color: black;
+    text-shadow: 2px 2px #df8931;
+  }
+}
+
+@media (max-width: 640px) {
+  .leftHalfHeader {
+    left: -150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .leftHalfHeader {
+    left: -180px;
+  }
+}
+
 .rightHalfHeader {
   top: 350px;
   right: 150px;
@@ -437,6 +509,27 @@ header h1 {
 @media (max-width: 1000px) {
   .rightHalfHeader {
     right: -80px;
+  }
+}
+
+@media (max-width: 860px) {
+  .rightHalfHeader {
+    font-size: 6rem;
+    color: black;
+    text-shadow: 2px 2px #df8931;
+    right: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .rightHalfHeader {
+    right: -40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .rightHalfHeader {
+    right: -60px;
   }
 }
 

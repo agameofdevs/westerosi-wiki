@@ -21,7 +21,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-    @include mqTablet{
+    @include mqTabletSmall{
       flex-direction: column;
     }
 }
@@ -33,7 +33,7 @@ h3 {
   flex-direction: column;
   width: calc(100% / 3);
   margin-right: 20px;
-  @include mqTablet{
+  @include mqTabletSmall{
     width: 100%;
   }
 }
