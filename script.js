@@ -170,10 +170,6 @@ $(function () {
     app.init();
     $('.siteInfo').show();
     $('.sigilSection').hide()
-<<<<<<< HEAD
-=======
-    // $('header').show();
->>>>>>> 6b48a7cf424c99ad820086a7d7122bf91ed5eaa7
     $('main').hide();
     
 
