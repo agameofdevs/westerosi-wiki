@@ -422,7 +422,7 @@ img {
   border-radius: 10px;
 }
 
-header {
+.sigilSection {
   background-image: url(../assets/westerosMap.jpg);
   background-color: black;
   background-size: contain;
@@ -434,12 +434,12 @@ header {
 }
 
 @media (max-width: 670px) {
-  header {
+  .sigilSection {
     background-size: cover;
   }
 }
 
-header h1 {
+.sigilSection h1 {
   position: absolute;
 }
 
@@ -533,20 +533,20 @@ header h1 {
   }
 }
 
-header .sigil {
+.sigilSection .sigil {
   position: absolute;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
 }
 
-header .sigil img {
+.sigilSection .sigil img {
   height: 60px;
   width: 50px;
   -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
 }
 
-header .sigil img:hover {
+.sigilSection .sigil img:hover {
   height: 60px;
   width: 50px;
   -webkit-transform: scale(1.7);
