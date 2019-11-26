@@ -266,9 +266,9 @@ a:hover {
       justify-content: space-around;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 860px) {
   .siteInfo {
-    height: 100vh;
+    height: auto;
   }
 }
 

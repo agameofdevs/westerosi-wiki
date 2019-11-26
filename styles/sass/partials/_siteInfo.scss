@@ -9,8 +9,8 @@
   flex-direction: column;
   justify-content: space-around;
 
-  @include mqPhoneSmall{
-    height: 100vh;
+  @include mqTabletSmall{
+    height: auto;
   }
 }
 
