@@ -21,7 +21,7 @@ app.checkForEmptyValues = () => {
 
 app.collectInfo = function () {
 
-    $('.targaryanSigil').on('click', function () {
+    $('.targaryanSigil').on('click keypress', function () {
         houseID = 378;
         lordID = 1303;
         founderID = "";
@@ -31,7 +31,7 @@ app.collectInfo = function () {
         app.getInfo();
     });
 
-    $('.starkSigil').on('click', function () {
+    $('.starkSigil').on('click keypress', function () {
         houseID = 362;
         lordID = "";
         founderID = 209;
@@ -41,7 +41,7 @@ app.collectInfo = function () {
         app.getInfo();
     });
 
-    $('.lannisterSigil').on('click', function () {
+    $('.lannisterSigil').on('click keypress', function () {
         houseID = 229;
         lordID = 238;
         founderID = 615;
@@ -50,7 +50,7 @@ app.collectInfo = function () {
         app.getInfo();
     });
 
-    $('.arrynSigil').on('click', function () {
+    $('.arrynSigil').on('click keypress', function () {
         houseID = 7;
         lordID = 894;
         founderID = 144;
@@ -59,7 +59,7 @@ app.collectInfo = function () {
         app.getInfo();
     });
 
-    $('.tullySigil').on('click', function () {
+    $('.tullySigil').on('click keypress', function () {
         houseID = 395;
         lordID = "";
         founderID = "";
@@ -68,7 +68,7 @@ app.collectInfo = function () {
         app.getInfo();
     });
 
-    $('.greyjoySigil').on('click', function () {
+    $('.greyjoySigil').on('click keypress', function () {
         houseID = 169;
         lordID = 385;
         founderID = "";
@@ -77,7 +77,7 @@ app.collectInfo = function () {
         app.getInfo();
     });
 
-    $('.baratheonSigil').on('click', function () {
+    $('.baratheonSigil').on('click keypress', function () {
         houseID = 17;
         lordID = 1029;
         founderID = 797;
@@ -86,7 +86,7 @@ app.collectInfo = function () {
         app.getInfo();
     });
 
-    $('.tyrellSigil').on('click', function () {
+    $('.tyrellSigil').on('click keypress', function () {
         houseID = 398;
         lordID = 691;
         founderID = 75;
@@ -95,7 +95,7 @@ app.collectInfo = function () {
         app.getInfo();
     });
 
-    $('.martellSigil').on('click', function () {
+    $('.martellSigil').on('click keypress', function () {
         houseID = 285;
         lordID = 326;
         founderID = 1718;
@@ -189,8 +189,7 @@ $(function () {
     })
 
 
-    $('.sigil').on('click', function () {
-
+    $('.sigil').on('click keypress', function () {
         $('main').show();
         $('html, body').animate({
             scrollTop: $('main').offset().top
