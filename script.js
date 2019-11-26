@@ -172,6 +172,13 @@ $(function () {
     $('.sigilSection').hide()
     $('main').hide();
     
+    $('.skipLink').on('click', function(){
+        $('.sigilSection').show();
+        $('html, body').animate({
+            scrollTop: $('.sigilSection').offset().top
+        })
+        $('.siteInfo').fadeOut();
+    })
 
     $('.goToWiki').on('click', function () {
         $('.sigilSection').show();
@@ -180,6 +187,7 @@ $(function () {
         })
         $('.siteInfo').fadeOut();
     })
+
 
     $('.sigil').on('click', function () {
 

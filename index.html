@@ -6,9 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link
-        href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Uncial+Antiqua|Cinzel+Decorative:400,700,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Uncial+Antiqua|Cinzel+Decorative:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Westerosi Wiki</title>
@@ -16,11 +14,11 @@
 ​
 
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
     <header>
         <section class="siteInfo">
             <div class="infoContent wrapper">
                 ​
-
                 <h2>
                     Welcome to Westerosi Wiki!
                 </h2>
@@ -32,11 +30,11 @@
                     that lays in the far west of the known world, Westeros.
                 </p>
                 <p>
-                    Just click on one of the house Sigils displayed to learn about the chosen house!
+                    Just click on one of the house Sigils displayed on the map to learn about the chosen house!
                 </p>
             </div>
             ​
-            <button type="button" class="goToWiki">
+            <button type="button" class="goToWiki" id="mainContent">
                 Continue to Westerosi Wiki
             </button>
         </section>
@@ -50,34 +48,34 @@
             </div>
             ​
             <!-- House sigils-->
-            <div class="starkSigil sigil animated infinite pulse">
+            <div class="starkSigil sigil animated infinite pulse tabindex='0' ">
                 <img src="assets/houseStarkSigil.png" alt="Sigil image of the House Stark showing head of a wolf">
             </div>
-            <div class="targaryanSigil sigil animated infinite pulse">
+            <div class="targaryanSigil sigil animated infinite pulse tabindex='0'">
                 <img src="assets/houseTargaryenSigil.png"
                     alt="Sigil image of the house Targaryan showing a three headed dragon">
             </div>
-            <div class="lannisterSigil sigil animated infinite pulse">
+            <div tabindex='0' class="lannisterSigil sigil animated infinite pulse">
                 <img src="assets/houseLannisterSigil.png" alt="Sigil image of the house Lannister showing a lion">
             </div>
-            <div class="greyjoySigil sigil animated infinite pulse">
+            <div tabindex='0' class="greyjoySigil sigil animated infinite pulse">
                 <img src="assets/houseGreyjoySigil.png"
                     alt="Sigil image of the house Greyjoy showing an upside down octopus">
             </div>
-            <div class="tullySigil sigil animated infinite pulse">
+            <div tabindex='0' class="tullySigil sigil animated infinite pulse">
                 <img src="assets/houseTullySigil.png" alt="Sigil image of the house Tully showing a fish">
             </div>
-            <div class="baratheonSigil sigil animated infinite pulse">
+            <div tabindex='0' class="baratheonSigil sigil animated infinite pulse">
                 <img src="assets/houseBaratheonSigil.png" alt="Sigil image of the house Baratheon showing a deer">
             </div>
-            <div class="martellSigil sigil animated infinite pulse">
+            <div tabindex='0' class="martellSigil sigil animated infinite pulse">
                 <img src="assets/houseMartellSigil.png"
                     alt="Sigil image of the house Martell showing a spear going through the sun">
             </div>
-            <div class="arrynSigil sigil animated infinite pulse">
+            <div tabindex='0' class="arrynSigil sigil animated infinite pulse">
                 <img src="assets/houseArrynSigil.png" alt="Sigil image of the house Aryrn showing a falcon">
             </div>
-            <div class="tyrellSigil sigil animated infinite pulse">
+            <div tabindex='0' class="tyrellSigil sigil animated infinite pulse">
                 <img src="assets/houseTyrellSigil.png" alt="Sigil image of the house Tyrell showing a golden rose">
             </div>
         </section>

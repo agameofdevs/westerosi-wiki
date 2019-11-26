@@ -16,7 +16,7 @@
     }
 }
 
-@mixin mqTableMed {
+@mixin mqTabletMed {
     @media (max-width:930px) {
         @content;
     }

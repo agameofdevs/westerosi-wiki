@@ -2,36 +2,58 @@
   background-image: url(../assets/dragonsBG.jpg);
   background-size: cover;
   background-repeat: repeat-x;
+  height: 100vh;
   color: white;
   position: relative;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+@include mqPhoneSmall{
+  height: auto;
+}
+}
+
+.siteInfo .infoContent {
   h2 {
     margin: 30px 0;
     font-size: 5rem;
     color: #c72c41;
+    @include mqPhoneBig{
+      font-size: 4rem;
+    }
+    @include mqPhoneSmall{
+      font-size: 3.5rem;
+    }
   }
   p {
     margin: 30px 0;
     color: white;
     padding: 0 60px;
     font-size: 2.6rem;
-  }
-  button{
-      width: 30%;
-      padding: 20px;
-      align-self: center;
-      background: transparent;
-      color: #c72c41;
+    @include mqPhoneBig{
+      padding: 0 5px;
+    }
+    @include mqPhoneSmall{
       font-size: 2.2rem;
-      border: 2px solid white;
-      &:hover{
-          background-color: #c72c41;
-          color:#262834;
-          border: #262834;
-          transition: 0.4s;
-      }
+    }
+  }
+}
+
+.goToWiki {
+  width: 30%;
+  padding: 20px;
+  align-self: center;
+  background: transparent;
+  color: #c72c41;
+  font-size: 2.2rem;
+  border: 2px solid white;
+  &:hover {
+    background-color: #c72c41;
+    color: #262834;
+    border: #262834;
+    transition: 0.4s;
+  }
+  @include mqTabletSmall {
+    width: 80%;
   }
 }
