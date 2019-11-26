@@ -235,6 +235,19 @@ p {
   font-weight: 800;
 }
 
+a {
+  color: #c72c41;
+}
+
+a:hover {
+  border: 2px solid #c72c41;
+  background-color: #262834;
+  color: white;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .siteInfo {
   background-image: url(../assets/dragonsBG.jpg);
   background-size: cover;
@@ -294,6 +307,11 @@ p {
   .siteInfo .infoContent p {
     font-size: 2.2rem;
   }
+}
+
+.siteInfo .infoContent .apiLink {
+  color: white;
+  font-size: 2.6rem;
 }
 
 .goToWiki {
