@@ -330,10 +330,17 @@ main {
   position: relative;
 }
 
-.houseContainer {
+.houseContainer,
+.houseGlory,
+.firstColumn,
+.secondColumn,
+.thirdColumn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.houseContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -342,9 +349,6 @@ main {
 }
 
 .houseGlory {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -366,9 +370,6 @@ main {
 .firstColumn,
 .secondColumn,
 .thirdColumn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -455,6 +456,10 @@ main {
   margin-top: 10px;
 }
 
+.emblemImage, .lordImage {
+  border-radius: 10px;
+}
+
 .wrapper {
   max-width: 1240px;
   width: 80%;
@@ -469,7 +474,6 @@ html {
 img {
   width: 100%;
   display: block;
-  border-radius: 10px;
 }
 
 .skipLink {
@@ -493,7 +497,7 @@ img {
   background-position: center center;
   height: 100vh;
   position: relative;
-  font-family: url(../assets/gameOfThrones.ttf);
+  font-family: url(../assets/fonts/gameOfThrones.ttf);
 }
 
 @media (max-width: 670px) {

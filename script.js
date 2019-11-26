@@ -1,15 +1,21 @@
-// Create app namespace to hold all methods
+// App namespace for holding all methods
 const app = {};
+// App namespace for holding all methods
+
+
+// URLs for API Call
 app.URL = 'https://www.anapioficeandfire.com/api/houses/';
-app.lordURL = 'https://www.anapioficeandfire.com/api/characters/'
-app.founderURL = 'https://www.anapioficeandfire.com/api/characters/'
+app.lordURL = 'https://www.anapioficeandfire.com/api/characters/';
+app.founderURL = 'https://www.anapioficeandfire.com/api/characters/';
+// URLs for API Call
 
-let houseID;
-let lordID;
-let founderID;
-// Collect user input
 
-// Error handling function in case we get null values for lordID & founderId
+// Declaring variables
+let houseID, lordID, founderID;
+// Declaring variables
+
+
+// Error handling function in case we get undefined values for lordID & founderID
 app.checkForEmptyValues = () => {
     if (lordID == "") {
         $('.currentLordName').html('Unknown');
@@ -19,15 +25,17 @@ app.checkForEmptyValues = () => {
         $('.founder').html('Unknown');
     }
 }
+// Error handling function in case we get null values for lordID & founderID
 
-// Functions that would tell the AJAX calls which house information we’d like to see based on what sigil we clicked. Here, we are giving each house sigil its own HouseID, lordID, and founderID.
+
+
+// Functions that would tell the AJAX calls which house information we’d like to see based on what sigil we clicked. 
 app.collectInfo = function () {
 
     $('.targaryanSigil').on('click keypress', function () {
         houseID = 378;
         lordID = 1303;
         founderID = "";
-
         $('.houseHistory').hide();
         $('.targaryanHistory').show();
         app.getInfo();
@@ -105,6 +113,8 @@ app.collectInfo = function () {
         app.getInfo();
     });
 }
+// Functions that would tell the AJAX calls which house information we’d like to see based on what sigil we clicked. 
+
 
 
 // Make AJAX request based on which sigil the user selected. Each sigil has its own unique values for houseID, lordID, and founderID
@@ -125,19 +135,17 @@ app.getInfo = function () {
             dataType: 'json',
         })
     )
-        .then(function (resultOne, resultTwo, resultThree) {
-            app.displayInfo(resultOne, resultTwo, resultThree);
-        }).fail((er1, er2, er3) => {
-            // console.log(er1,er2,er3);
-        });
+    .then(function (resultOne, resultTwo, resultThree) {
+        app.displayInfo(resultOne, resultTwo, resultThree);
+    });
 }
+// Make AJAX request based on which sigil the user selected. Each sigil has its own unique values for houseID, lordID, and founderID
 
-// Display data on the page
-//Here, we will be displaying information gathered from the API data, we will also be appending them to the page
+
+
+// Display data on the page by appending them
 app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
-    console.log(houseInfo, lordInfo, founderInfo)
-
-    houseInfo[0].titles.join(", ")
+    houseInfo[0].titles.join(", ");
 
     $('.houseName').html(`${houseInfo[0].name}`);
     $('.region').html(`${houseInfo[0].region}`);
@@ -156,20 +164,23 @@ app.displayInfo = (houseInfo, lordInfo, founderInfo) => {
 
     app.checkForEmptyValues();
 }
+// Display data on the page by appending them
 
-// Start app
-//put all the functions we need in here
+
+// Init Functinon
 app.init = function () {
     app.collectInfo();
     app.getInfo();
     app.displayInfo;
 }
+// Init Functinon
 
-//document ready
+
+//Document Ready
 $(function () {
     app.init();
     $('.siteInfo').show();
-    $('.sigilSection').hide()
+    $('.sigilSection').hide();
     $('main').hide();
     
     $('.skipLink').on('click', function(){
@@ -188,7 +199,6 @@ $(function () {
         $('.siteInfo').fadeOut();
     })
 
-
     $('.sigil').on('click keypress', function () {
         $('main').show();
         $('html, body').animate({
@@ -204,3 +214,4 @@ $(function () {
 
     $('.houseHistory').hide();
 });
+//Document Ready

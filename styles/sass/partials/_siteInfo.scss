@@ -8,9 +8,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-@include mqPhoneSmall{
-  height: 100vh;
-}
+
+  @include mqPhoneSmall{
+    height: 100vh;
+  }
 }
 
 .siteInfo .infoContent {
@@ -18,18 +19,22 @@
     margin: 30px 0;
     font-size: 5rem;
     color: #c72c41;
+
     @include mqPhoneBig{
       font-size: 4rem;
     }
+
     @include mqPhoneSmall{
       font-size: 3.5rem;
     }
   }
+
   p {
     margin: 30px 0;
     color: white;
     padding: 0 60px;
     font-size: 2.6rem;
+
     @include mqPhoneBig{
       padding: 0 5px;
     }
@@ -47,12 +52,14 @@
   color: #c72c41;
   font-size: 2.2rem;
   border: 2px solid white;
+  
   &:hover {
     background-color: #c72c41;
     color: #262834;
     border: #262834;
     transition: 0.4s;
   }
+
   @include mqTabletSmall {
     width: 80%;
   }

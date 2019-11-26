@@ -6,25 +6,31 @@ main {
   position: relative;
 }
 
-.houseContainer {
+.houseContainer,
+.houseGlory,
+.firstColumn,
+.secondColumn,
+.thirdColumn {
   display: flex;
+}
+
+.houseContainer {
   flex-direction: column;
   padding: 20px 0;
 }
 
 .houseGlory {
-  display: flex;
+  
   flex-direction: row;
   justify-content: space-between;
-    @include mqTabletSmall{
-      flex-direction: column;
-    }
+  @include mqTabletSmall{
+    flex-direction: column;
+  }
 }
 
 .firstColumn,
 .secondColumn,
 .thirdColumn {
-  display: flex;
   flex-direction: column;
   width: calc(100% / 3);
   margin-right: 20px;
@@ -94,4 +100,8 @@ main {
   margin: 0 auto;
   max-width: 300px;
   margin-top: 10px;
+}
+
+.emblemImage, .lordImage {
+  border-radius: 10px;
 }
