@@ -180,7 +180,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .siteInfo {
+<<<<<<< HEAD
   background-image: url(../assets/dragonsBG.jpg);
+=======
+  background: url(../assets/dragonsBG.jpg);
+>>>>>>> 6b48a7cf424c99ad820086a7d7122bf91ed5eaa7
   background-size: cover;
   background-repeat: repeat-x;
   color: white;
@@ -193,20 +197,31 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+>>>>>>> 6b48a7cf424c99ad820086a7d7122bf91ed5eaa7
 }
 
 .siteInfo h2 {
   margin: 30px 0;
   font-size: 5rem;
+<<<<<<< HEAD
   color: #c72c41;
+=======
+  color: #da2d2d;
+>>>>>>> 6b48a7cf424c99ad820086a7d7122bf91ed5eaa7
 }
 
 .siteInfo p {
   margin: 30px 0;
   color: white;
   padding: 0 60px;
+<<<<<<< HEAD
   font-size: 2.6rem;
 }
 
@@ -228,6 +243,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: #262834;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+=======
+>>>>>>> 6b48a7cf424c99ad820086a7d7122bf91ed5eaa7
 }
 
 main {
@@ -512,6 +529,7 @@ img {
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 860px) {
   .rightHalfHeader {
     font-size: 6rem;
@@ -533,6 +551,8 @@ img {
   }
 }
 
+=======
+>>>>>>> 6b48a7cf424c99ad820086a7d7122bf91ed5eaa7
 .sigilSection .sigil {
   position: absolute;
   -webkit-animation-duration: 0.8s;

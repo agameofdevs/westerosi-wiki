@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 .siteInfo {
   background-image: url(../assets/dragonsBG.jpg);
+=======
+
+.siteInfo {
+  background: url(../assets/dragonsBG.jpg);
+>>>>>>> 6b48a7cf424c99ad820086a7d7122bf91ed5eaa7
   background-size: cover;
   background-repeat: repeat-x;
   color: white;
@@ -7,6 +13,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   justify-content: space-around;
   h2 {
     margin: 30px 0;
@@ -35,3 +42,19 @@
       }
   }
 }
+=======
+  justify-content: space-evenly;
+  h2{
+      margin: 30px 0;
+      font-size: 5rem;
+      color: #da2d2d;
+  }
+  p{
+      margin: 30px 0;
+      color: white;
+      padding: 0 60px;
+  }
+}
+
+
+>>>>>>> 6b48a7cf424c99ad820086a7d7122bf91ed5eaa7
