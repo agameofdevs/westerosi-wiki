@@ -450,13 +450,10 @@ main {
   }
 }
 
-.lordImage {
+.lordImage, .emblemImage {
   margin: 0 auto;
   max-width: 300px;
   margin-top: 10px;
-}
-
-.emblemImage, .lordImage {
   border-radius: 10px;
 }
 
