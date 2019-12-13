@@ -237,13 +237,14 @@ p {
 
 a {
   color: #c72c41;
+  border: 2px solid transparent;
 }
 
 a:hover {
   border: 2px solid #c72c41;
   background-color: #262834;
   color: white;
-  padding: 10px;
+  padding: 0 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -252,7 +253,7 @@ a:hover {
   background-image: url(../assets/dragonsBG.jpg);
   background-size: cover;
   background-repeat: repeat-x;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   position: relative;
   display: -webkit-box;
@@ -452,11 +453,14 @@ main {
   position: fixed;
   right: 30px;
   top: 50%;
+  cursor: pointer;
 }
 
 .arrowButton img {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  background-color: #c72c41;
+  border-radius: 5px;
 }
 
 @media (max-width: 1000px) {
@@ -466,6 +470,8 @@ main {
     z-index: 20;
     bottom: 40px;
     top: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
   }
 }
 
@@ -551,39 +557,7 @@ img {
 
 @media (max-width: 860px) {
   .leftHalfHeader {
-    font-size: 6rem;
-    left: -80px;
-    color: black;
-    text-shadow: 2px 2px #df8931;
-  }
-}
-
-@media (max-width: 640px) {
-  .leftHalfHeader {
-    left: -150px;
-  }
-}
-
-@media (max-width: 500px) {
-  .leftHalfHeader {
-    font-size: 3.5rem;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    left: 20px;
-    right: 0px;
-    top: 50px;
-    color: #f45905;
-    text-align: center;
-    text-shadow: 2px 2px black;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-  }
-}
-
-@media (max-width: 400px) {
-  .leftHalfHeader {
-    right: 0;
-    left: 2%;
+    display: none;
   }
 }
 
@@ -614,31 +588,7 @@ img {
 
 @media (max-width: 860px) {
   .rightHalfHeader {
-    font-size: 6rem;
-    color: black;
-    text-shadow: 5px 5px #df8931;
-    right: 50px;
-  }
-}
-
-@media (max-width: 640px) {
-  .rightHalfHeader {
-    right: -40px;
-  }
-}
-
-@media (max-width: 500px) {
-  .rightHalfHeader {
-    font-size: 3.5rem;
-    right: 120px;
-    top: 130px;
-    color: #f45905;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    text-shadow: 2px 2px black;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-    text-align: center;
+    display: none;
   }
 }
 
@@ -646,6 +596,7 @@ img {
   position: absolute;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
+  cursor: pointer;
 }
 
 .sigilSection .sigil img {
