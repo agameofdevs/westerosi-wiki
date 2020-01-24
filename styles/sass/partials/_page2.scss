@@ -85,8 +85,11 @@ main {
   position: fixed;
   right: 30px;
   top: 50%;
+  cursor: pointer;
   img {
     transform: rotate(-45deg);
+    background-color: $orangeColor;
+    border-radius: 5px;
   }
   @include mqTabletBig {
     height:40px;
@@ -94,6 +97,8 @@ main {
     z-index: 20;
     bottom: 40px;
     top: auto;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
   }
 }
 
